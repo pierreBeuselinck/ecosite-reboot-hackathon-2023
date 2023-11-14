@@ -5,6 +5,6 @@ Projet de site web pour le hackathon Reboot Communication
 
 npm i
 npm install sass
-npm install --save three
-npm install --save-dev vite
+npm i vite
+npm i  three
 
