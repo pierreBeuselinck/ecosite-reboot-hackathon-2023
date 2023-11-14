@@ -4,9 +4,12 @@
   "description": "Projet de site web pour le hackathon Reboot Communication",
   "main": "index.js",
   "scripts": {
-    "build-scss": "sass assets/styles/app.scss assets/styles/app.css",
-    "build-css": "postcss assets/styles/app.css -o assets/styles/app.css",
-    "watch-css":  "postcss assets/styles/app.scss -o assets/styles/app.css --watch"
+    "scss": "sass assets/styles/app.scss assets/styles/app.css",
+    "css": "postcss assets/styles/app.css -o assets/styles/app.css",
+    "build:scss": "npm run scss",
+    "build:css": "npm run css",
+    "watch-css": "postcss assets/styles/app.scss -o assets/styles/app.css --watch",
+    "build": "npm-run-all build:*"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "postcss-scss": "^4.0.9",
