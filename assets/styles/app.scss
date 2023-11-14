@@ -53,12 +53,25 @@ body{
     font-size: 32px;
     line-height: 38.4px;
 
+    & p:first-child::after{
+      content: url(../icons/stars1.svg);
+      position: absolute;
+      right: calc(0px - 15%);
+      top: calc(0px - 70%);
+    }
+
+    & p:last-child::before{
+      content: url(../icons/stars2.svg);
+      position: absolute;
+      top: calc(0px - 40%);
+      left: calc(0px - 15%);
+    }
+
     & p{
       font-weight: 400;
     }
 
     & p span{
-      font-family: var(--title-font);
       color: var(--secondary-bgColor);
       font-style: 700;
     }
