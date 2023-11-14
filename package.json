@@ -1,0 +1,48 @@
+{
+  "name": "ecosite-reboot-hackathon-2023",
+  "version": "1.0.0",
+  "description": "Projet de site web pour le hackathon Reboot Communication",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass assets/styles/app.scss assets/styles/app.css",
+    "css": "postcss assets/styles/app.css -o assets/styles/app.css",
+    "build:scss": "npm run scss",
+    "build:css": "npm run css",
+    "build:js": "babel assets/js/app.js --out-file assets/js/app.compiled.js",
+    "watch:scss": "sass assets/styles/app.scss assets/styles/app.css --watch",
+    "watch:css": "postcss assets/styles/app.css -o assets/styles/app.css --watch",
+    "watch:js": "nodemon --exec 'babel assets/js/app.js --out-file assets/js/app.compiled.js' --watch assets/js/app.js",
+    "watch": "npm-run-all --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023/issues"
+  },
+  "homepage": "https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.4",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5",
+    "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "nodemon": "^3.0.1",
+    "vite": "^4.5.0"
+  }
+}
