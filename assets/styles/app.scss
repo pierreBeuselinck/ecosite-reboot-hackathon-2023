@@ -14,6 +14,10 @@
   color: var(--principal-fontColor)
 }
 
+body{
+  background-color: var(--principal-bgColor)
+}
+
 @import 'abstracts/variables';
 // @import 'abstracts/mixins';
 // @import 'abstracts/functions';   
@@ -23,7 +27,7 @@
 // @import 'base/utilities';
 
 @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/footer';
 // @import 'layout/navigation';
 // @import 'layout/grid';
 

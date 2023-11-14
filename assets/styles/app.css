@@ -494,6 +494,9 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -505,6 +508,9 @@ video {
 }
 .rounded-md {
   border-radius: 0.375rem;
+}
+.border-r-2 {
+  border-right-width: 2px;
 }
 .p-1 {
   padding: 0.25rem;
@@ -525,14 +531,22 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 * {
   color: var(--principal-fontColor);
+}
+
+body {
+  background-color: var(--principal-bgColor);
 }
 
 :root {
   --principal-bgColor: #203726;
   --secondary-bgColor: rgba(135, 219, 97, 1);
-  --tertiary-bgColor: red;
+  --tertiary-bgColor: #0D1710;
   --principal-fontColor: #FFFFFF ;
 }
 
@@ -566,5 +580,33 @@ video {
 
 .nav-link > li:hover::after {
   width: 85%;
+}
+
+.nav-link > li:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--tertiary-bgColor);
+}
+
+.footer-link > li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.footer-link > li:hover::after {
+  width: calc(100% - 32px);
+}
+
+.footer-link > li:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

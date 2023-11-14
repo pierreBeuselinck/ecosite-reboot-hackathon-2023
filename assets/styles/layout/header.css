@@ -1,3 +1,35 @@
 .header-bg-color {
   background-color: var(--principal-bgColor);
+}
+
+.logo {
+  background-color: var(--secondary-bgColor);
+}
+
+.cart-button {
+  background-color: var(--secondary-bgColor);
+}
+
+.text-color-green {
+  color: var(--principal-bgColor);
+}
+
+.nav-link > li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.nav-link > li:hover::after {
+  width: 85%;
+}
+
+.nav-link > li:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

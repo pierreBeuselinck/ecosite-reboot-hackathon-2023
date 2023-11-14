@@ -29,3 +29,7 @@
 .nav-link > li:hover::after{
   width: 85%;
 }
+
+.nav-link > li:hover{
+  cursor: pointer;
+}
