@@ -485,5 +485,10 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+:root {
+  --principal-bgColor: #203726;
+  --secondary-bgColor: #69D239;
+  --principal-fontColor: #FFFFFF ;
+}
 
 /*# sourceMappingURL=app.css.map */
