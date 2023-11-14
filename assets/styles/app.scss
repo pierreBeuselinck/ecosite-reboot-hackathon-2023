@@ -1,15 +1,15 @@
-// main.scss
+// app.scss
 
 // Tailwind
-@import 'tailwindcss/base';       // Importe les styles de base de Tailwind
-@import 'tailwindcss/components'; // Importe les composants de Tailwind
-@import 'tailwindcss/utilities';  // Importe les utilitaires de Tailwind
+@import '../../node_modules/tailwindcss/base';       // Importe les styles de base de Tailwind
+@import '../../node_modules/tailwindcss/components'; // Importe les composants de Tailwind
+@import '../../node_modules/tailwindcss/utilities';  // Importe les utilitaires de Tailwind
 
 //Customs
 
 // @import 'abstracts/variables';
 // @import 'abstracts/mixins';
-// @import 'abstracts/functions';
+// @import 'abstracts/functions';   
 
 // @import 'base/reset';
 // @import 'base/typography';

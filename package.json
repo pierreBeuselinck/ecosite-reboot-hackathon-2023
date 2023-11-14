@@ -4,8 +4,9 @@
   "description": "Projet de site web pour le hackathon Reboot Communication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass assets/styles/main.scss app.css"
+    "build-scss": "sass assets/styles/app.scss assets/styles/app.css",
+    "build-css": "postcss assets/styles/app.css -o assets/styles/app.css",
+    "watch-css":  "postcss assets/styles/app.scss -o assets/styles/app.css --watch"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,11 @@
   },
   "homepage": "https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "node-sass": "^9.0.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-scss": "^4.0.9",
     "tailwindcss": "^3.3.5"
   }
 }
