@@ -11,7 +11,8 @@
 //Customs
 
 *{
-  color: var(--principal-fontColor)
+  color: var(--principal-fontColor);
+  font-family: var(--text-font);
 }
 
 body{
@@ -38,3 +39,39 @@ body{
 // @import 'pages/home';
 // @import 'pages/about';
 // @import 'pages/contact';
+
+.herobanner{
+  & .herobanner-title{
+    font-size: 224px;
+    font-family: var(--title-font);
+    line-height: 1.1;
+    padding-bottom: 120px;
+  }
+
+  & .herobanner-text{
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 38.4px;
+
+    & p{
+      font-weight: 400;
+    }
+
+    & p span{
+      font-family: var(--title-font);
+      color: var(--secondary-bgColor);
+      font-style: 700;
+    }
+  }
+
+  & .button{
+    background-color: var(--secondary-bgColor);
+    cursor: pointer;
+    margin-bottom: 70px;
+
+    & p{
+      color: var(--secondary-fontColor);
+      font-size: 24px;
+    }
+  }
+}
