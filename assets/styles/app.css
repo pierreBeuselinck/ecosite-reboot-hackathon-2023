@@ -485,11 +485,31 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 :root {
   --principal-bgColor: #203726;
   --secondary-bgColor: #69D239;
   --tertiary-bgColor: red;
   --principal-fontColor: #FFFFFF ;
 }
-
 /*# sourceMappingURL=app.css.map */

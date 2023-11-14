@@ -1,9 +1,12 @@
 // app.scss
 
 // Tailwind
-@import '../../node_modules/tailwindcss/base';       // Importe les styles de base de Tailwind
-@import '../../node_modules/tailwindcss/components'; // Importe les composants de Tailwind
-@import '../../node_modules/tailwindcss/utilities';  // Importe les utilitaires de Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@tailwind variants;
+
 
 //Customs
 
