@@ -437,10 +437,6 @@ video {
 .contents{
   display: contents;
 }
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
 .w-5\/12{
   width: 41.666667%;
 }
@@ -524,6 +520,10 @@ video {
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .py-5{
   padding-top: 1.25rem;
