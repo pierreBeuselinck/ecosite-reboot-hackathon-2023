@@ -4,6 +4,7 @@ module.exports = {
     './*.html',
     './assets/js/**/*.js',
     './src/composant/*.html',
+    './src/templates/**/*.html',
   ],
 }
 
