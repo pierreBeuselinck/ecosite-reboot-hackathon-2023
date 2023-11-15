@@ -1,10 +1,15 @@
 :root{
   --principal-bgColor: #203726;
-  --secondary-bgColor: #69D239;
-  --tertiary-bgColor: red;
+  --secondary-bgColor: rgba(135, 219, 97, 1);
+  --tertiary-bgColor: #0D1710;
+  --dp-bgColor : #D1F1C2;
 
   --principal-fontColor: #FFFFFF ;
-  // --secondary-fontColor: ;
+  --secondary-fontColor: #0D1710 ;
+  --dp-text-color: #121E15;
   // --tertiary-fontColor: ;
+
+  --title-font : 'League Gothic';
+  --text-font : 'League Spartan';
 
 }

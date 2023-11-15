@@ -1,33 +1,91 @@
 // app.scss
 
-body {
-    background-color: red
-}
-
 // Tailwind
-@import '../../node_modules/tailwindcss/base';       // Importe les styles de base de Tailwind
-@import '../../node_modules/tailwindcss/components'; // Importe les composants de Tailwind
-@import '../../node_modules/tailwindcss/utilities';  // Importe les utilitaires de Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@tailwind variants;
+
 
 //Customs
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan&display=swap');
+
+*{
+  color: var(--principal-fontColor);
+  font-family: var(--text-font);
+}
+
+body{
+  background-color: var(--principal-bgColor)
+}
 
 @import 'abstracts/variables';
 // @import 'abstracts/mixins';
 // @import 'abstracts/functions';   
 
-// @import 'base/reset';
-// @import 'base/typography';
+@import 'base/fonts';
 // @import 'base/utilities';
 
-// @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/footer';
 // @import 'layout/navigation';
 // @import 'layout/grid';
 
-// @import 'components/buttons';
+@import 'components/dp';
 // @import 'components/cards';
 // @import 'components/modals';
 
 // @import 'pages/home';
 // @import 'pages/about';
 // @import 'pages/contact';
+
+.herobanner{
+  & .herobanner-title{
+    font-size: 224px;
+    font-family: var(--title-font);
+    line-height: 1.1;
+    padding-bottom: 120px;
+  }
+
+  & .herobanner-text{
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 38.4px;
+
+    & p:first-child::after{
+      content: url(../icons/stars1.svg);
+      position: absolute;
+      right: calc(0px - 15%);
+      top: calc(0px - 70%);
+    }
+
+    & p:last-child::before{
+      content: url(../icons/stars2.svg);
+      position: absolute;
+      top: calc(0px - 40%);
+      left: calc(0px - 15%);
+    }
+
+    & p{
+      font-weight: 400;
+    }
+
+    & p span{
+      color: var(--secondary-bgColor);
+      font-style: 700;
+    }
+  }
+
+  & .button{
+    background-color: var(--secondary-bgColor);
+    cursor: pointer;
+    margin-bottom: 70px;
+
+    & p{
+      color: var(--secondary-fontColor);
+      font-size: 24px;
+    }
+  }
+}

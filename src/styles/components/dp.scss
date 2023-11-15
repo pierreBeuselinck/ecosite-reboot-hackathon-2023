@@ -1,0 +1,34 @@
+.dp{
+  background-color: var(--dp-bgColor);
+  max-width: 560px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+
+  & .dp-title{
+    & h2{
+      z-index: 2;
+      font-size: 48px;
+      font-family: var(--title-font);
+      color: var(--principal-bgColor);
+    }
+
+    & button{
+      height: fit-content;
+      font-size: 14px;
+      color: var(--secondary-fontColor);
+      background-color: var(--secondary-bgColor);
+    }
+  }
+
+  & p{
+    font-size: 14px;
+    color: var(--dp-text-color);
+    max-width: 260px;
+  }
+
+  & .img-position{
+    bottom: -18%;
+    left: -9%;
+  }
+}
