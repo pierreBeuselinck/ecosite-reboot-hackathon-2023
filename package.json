@@ -9,13 +9,13 @@
     "build:scss": "npm run scss",
     "build:css": "npm run css",
     "build:vite": "vite build",
-    "watch:scss": "sass assets/styles/app.scss assets/styles/app.css --watch",
-    "watch:css": "postcss assets/styles/app.css -o assets/styles/app.css --watch",
-    "watch:js": "nodemon --exec 'babel src/assets/js/app.js --out-file src/assets/js/app.compiled.js' --watch assets/js/app.js",
-    "watch": "npm-run-all --parallel watch:*",
+    "watch:scss": "sass src/styles/app.scss src/main.css --watch",
+    "watch:css": "postcss src/main.css -o src/main.css --watch",
     "build": "npm-run-all build:* build:vite",
-    "serve": "vite preview"
-  },  
+    "serve": "vite preview",
+    "watch": "npm-run-all --parallel watch:*",
+    "dev": "vite"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023.git"

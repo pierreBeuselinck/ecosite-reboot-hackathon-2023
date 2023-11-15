@@ -1,5 +1,9 @@
 // app.scss
 
+body {
+    background-color: red
+}
+
 // Tailwind
 @import '../../node_modules/tailwindcss/base';       // Importe les styles de base de Tailwind
 @import '../../node_modules/tailwindcss/components'; // Importe les composants de Tailwind
