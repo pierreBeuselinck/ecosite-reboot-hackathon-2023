@@ -427,6 +427,9 @@ video {
 .flex{
   display: flex;
 }
+.w-5\/12{
+  width: 41.666667%;
+}
 .flex-col{
   flex-direction: column;
 }
@@ -488,6 +491,10 @@ video {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -525,7 +532,8 @@ body {
   --principal-bgColor: #203726;
   --secondary-bgColor: rgba(135, 219, 97, 1);
   --tertiary-bgColor: #0D1710;
-  --dp-bgColor: #D1F1C2;
+  --dp-bgColor:#EE7748;
+  --dp-button-bgColor: #D1F1C2;
   --principal-fontColor: #FFFFFF ;
   --secondary-fontColor: #0D1710 ;
   --dp-text-color: #121E15;
@@ -599,9 +607,9 @@ body {
 }
 
 .dp-card {
-  background-color: var(--dp-bgColor);
+  background-color: var(--dp-button-bgColor);
   max-width: 560px;
-  max-height: 360px;
+  min-height: 360px;
   width: 100%;
   height: 100%;
 }
@@ -624,8 +632,8 @@ body {
   max-width: 260px;
 }
 .dp-card .img-position {
-  bottom: -18%;
-  left: -9%;
+  bottom: -14%;
+  left: -10%;
 }
 
 .herobanner .herobanner-title {
@@ -666,5 +674,9 @@ body {
 .herobanner .button p {
   color: var(--secondary-fontColor);
   font-size: 24px;
+}
+
+.dp {
+  background-color: var(--dp-bgColor);
 }
 /*# sourceMappingURL=main.css.map */
