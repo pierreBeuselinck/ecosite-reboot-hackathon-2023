@@ -479,6 +479,7 @@ video {
 .text-center{
   text-align: center;
 }
+@tailwind variants;
 * {
   color: var(--principal-fontColor);
   font-family: var(--text-font);
@@ -634,4 +635,5 @@ body {
   color: var(--secondary-fontColor);
   font-size: 24px;
 }
+
 /*# sourceMappingURL=main.css.map */
