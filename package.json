@@ -4,17 +4,18 @@
   "description": "Projet de site web pour le hackathon Reboot Communication",
   "main": "index.js",
   "scripts": {
-    "scss": "sass assets/styles/app.scss assets/styles/app.css",
-    "css": "postcss assets/styles/app.css -o assets/styles/app.css",
+    "scss": "sass src/styles/app.scss src/main.css",
+    "css": "postcss src/main.css -o src/main.css",
     "build:scss": "npm run scss",
     "build:css": "npm run css",
-    "build:js": "babel assets/js/app.js --out-file assets/js/app.compiled.js",
+    "build:vite": "vite build",
     "watch:scss": "sass assets/styles/app.scss assets/styles/app.css --watch",
     "watch:css": "postcss assets/styles/app.css -o assets/styles/app.css --watch",
-    "watch:js": "nodemon --exec 'babel assets/js/app.js --out-file assets/js/app.compiled.js' --watch assets/js/app.js",
+    "watch:js": "nodemon --exec 'babel src/assets/js/app.js --out-file src/assets/js/app.compiled.js' --watch assets/js/app.js",
     "watch": "npm-run-all --parallel watch:*",
-    "build": "npm-run-all build:*"
-  },
+    "build": "npm-run-all build:* build:vite",
+    "serve": "vite preview"
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pierreBeuselinck/ecosite-reboot-hackathon-2023.git"
@@ -34,12 +35,16 @@
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "postcss-scss": "^4.0.9",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.3.5",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
-    "nodemon": "^3.0.1"
+    "babel-loader": "^9.1.3",
+    "nodemon": "^3.0.1",
+    "vite": "^4.5.0",
+    "vite-plugin-copy": "^0.1.6"
   }
 }
