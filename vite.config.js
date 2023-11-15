@@ -1,18 +1,20 @@
-// vite.config.js
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
+import nunjucks from 'vite-plugin-nunjucks'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   base: '/',
+  plugins: [
+    nunjucks(),
+],
   server: {
     port: 3000,
   },
   build: {
-    // Comment out the rollupOptions unless necessary
-    // rollupOptions: {
-    //   input: 'src/main.js',
-    // },
     outDir: 'dist',
     assetsDir: 'assets',
   },
-  // ...
 });

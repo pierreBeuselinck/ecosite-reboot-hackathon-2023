@@ -36,7 +36,8 @@
     "postcss-cli": "^10.1.0",
     "postcss-scss": "^4.0.9",
     "tailwindcss": "^3.3.5",
-    "three": "^0.158.0"
+    "three": "^0.158.0",
+    "vite-plugin-nunjucks": "^0.1.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
