@@ -261,3 +261,41 @@ body{
   }
 }
 
+
+.barre-avancement{
+
+  .bg-normal{
+    background-color: var(--secondary-bgColor);
+    padding: 8px;
+    border-radius: 100%;
+    transition: all .3s ease;
+
+    &:hover{
+      transform: scale(1.25);
+    }
+  }
+
+  .bg-sombre{
+    background-color: #2C5818;
+    padding: 8px;
+    border-radius: 100%;
+  }
+
+  .sidebar-break1{
+    width: 230px;
+    height: 4px;
+    background-color: #6A796E;
+  }
+
+  .sidebar-break2{
+    width: 70px;
+    height: 4px;
+    background-color: #6A796E;
+  }
+
+  .sidebar-right{
+    width: 300px;
+    height: 4px;
+    background-color: #6A796E;
+  }
+}

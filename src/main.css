@@ -560,6 +560,9 @@ video {
 .pt-4{
   padding-top: 1rem;
 }
+.pt-40{
+  padding-top: 10rem;
+}
 .text-center{
   text-align: center;
 }
@@ -881,5 +884,35 @@ body {
   padding: 8px;
   border-radius: 100%;
   border: solid 2px white;
+}
+
+.barre-avancement .bg-normal {
+  background-color: var(--secondary-bgColor);
+  padding: 8px;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+.barre-avancement .bg-normal:hover {
+  transform: scale(1.25);
+}
+.barre-avancement .bg-sombre {
+  background-color: #2C5818;
+  padding: 8px;
+  border-radius: 100%;
+}
+.barre-avancement .sidebar-break1 {
+  width: 230px;
+  height: 4px;
+  background-color: #6A796E;
+}
+.barre-avancement .sidebar-break2 {
+  width: 70px;
+  height: 4px;
+  background-color: #6A796E;
+}
+.barre-avancement .sidebar-right {
+  width: 300px;
+  height: 4px;
+  background-color: #6A796E;
 }
 /*# sourceMappingURL=main.css.map */
