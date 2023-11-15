@@ -10,7 +10,7 @@
 <body>
     {% include "src/templates/header/header.html"  %}
     
-    <div id="sword-model"  style="width: 800px; height: 800px;"></div>
+    <!-- <div id="sword-model"  style="width: 800px; height: 800px;"></div> -->
     <section class="herobanner flex flex-col items-center">
         <h1 class="herobanner-title">MARCHÉ CON(SCIENT)</h1>
         <div class="herobanner-text text-center flex flex-col gap-6 pb-11">
@@ -27,16 +27,55 @@
         </div>
     </section>
 
-    <section class="dp">
-        {% include './src/composant/dp.html' %}
-        {% include './src/composant/dp.html' %}
-        {% include './src/composant/dp.html' %}
+    <section class="dp flex flex-wrap items-center justify-center gap-14 py-16">
+        <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
+        <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
+        <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
     </section>
     
-    <section class="info">
-        <div class="banner"></div>
+    <section class="info py-16">
+        <div class="banner">
+            <p>Le reveil sonne <span><img src="" alt="bombe"></span>Chaque clic est une arme à double tranchant</p>
+        </div>
         <div class="info-card">
-            <div class=""></div>
+            <div class="">
+                <h2><span>REVEILLEZ</span> VOUS</h2>
+                <div>
+                    <p>Notre mission est simple : montrer l'impact réel de nos choix de consommation.</p>
+                    <p>À travers une expérience d'achat unique, nous vous invitons à réfléchir et à agir pour un avenir plus durable.</p>
+                </div>
+                <span class="oeil">
+                    <img src="" alt="">
+                </span>
+                <span class="idea">
+                    <img src="" alt="">
+                </span>
+            </div>
+
+            <div class="">
+                <h2>CHAQUE <span>CHOIX</span> COMPTE<span>.</span></h2>
+                <div>
+                    <p>L'écoresponsabilité est notre réponse urgente à un monde en crise écologique. <br> Nous vous guidons pour comprendre et adopter des pratiques qui préservent notre planète.</p>
+                </div>
+                <span class="fleure">
+                    <img src="" alt="">
+                </span>
+                <span class="warning">
+                    <img src="" alt="">
+                </span>
+            </div>
+
+            <div class="">
+                <h2><span>COMMENT</span> ÇA MARCHE <span> ?</span></h2>
+                <div>
+                    <p>Une expérience révélatrice. <br>
+                        Commencez par une navigation simple et découvrez progressivement les conséquences environnementales cachées derrière chaque achat. <br>
+                        Un parcours qui transforme la conscience en action.</p>
+                </div>
+                <span class="curseur">
+                    <img src="" alt="">
+                </span>
+            </div>
         </div>
     </section>
     
