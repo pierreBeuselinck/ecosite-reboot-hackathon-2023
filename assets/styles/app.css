@@ -558,6 +558,9 @@ video {
 .pb-11 {
   padding-bottom: 2.75rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -574,6 +577,7 @@ body {
   --principal-bgColor: #203726;
   --secondary-bgColor: rgba(135, 219, 97, 1);
   --tertiary-bgColor: #0D1710;
+  --dp-bgColor: #D1F1C2;
   --principal-fontColor: #FFFFFF ;
   --secondary-fontColor: #0D1710 ;
   --title-font: "League Gothic";
@@ -643,6 +647,18 @@ body {
 
 .footer-link > li:hover {
   cursor: pointer;
+}
+
+.dp {
+  background-color: var(--dp-bgColor);
+  max-width: 560px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+}
+.dp .dp-text h2 {
+  font-size: 48px;
+  font-family: var(--title-font);
 }
 
 .herobanner .herobanner-title {

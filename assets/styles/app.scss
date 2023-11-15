@@ -23,8 +23,7 @@ body{
 // @import 'abstracts/mixins';
 // @import 'abstracts/functions';   
 
-// @import 'base/reset';
-// @import 'base/typography';
+@import 'base/fonts';
 // @import 'base/utilities';
 
 @import 'layout/header';
@@ -32,7 +31,7 @@ body{
 // @import 'layout/navigation';
 // @import 'layout/grid';
 
-// @import 'components/buttons';
+@import 'components/dp';
 // @import 'components/cards';
 // @import 'components/modals';
 

@@ -1,0 +1,11 @@
+.dp {
+  background-color: var(--dp-bgColor);
+  max-width: 560px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+}
+.dp .dp-text h2 {
+  font-size: 48px;
+  font-family: var(--title-font);
+}/*# sourceMappingURL=dp.css.map */
