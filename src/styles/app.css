@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@tailwind variants;
+* {
+  color: var(--principal-fontColor);
+  font-family: var(--text-font);
+}
+
+body {
+  background-color: var(--principal-bgColor);
+}
+
+:root {
+  --principal-bgColor: #203726;
+  --secondary-bgColor: rgba(135, 219, 97, 1);
+  --tertiary-bgColor: #0D1710;
+  --dp-bgColor: #D1F1C2;
+  --principal-fontColor: #FFFFFF ;
+  --secondary-fontColor: #0D1710 ;
+  --dp-text-color: #121E15;
+  --title-font: "League Gothic";
+  --text-font: "League Spartan";
+}
+
+.header-bg-color {
+  background-color: var(--principal-bgColor);
+}
+
+.logo {
+  background-color: var(--secondary-bgColor);
+}
+
+.cart-button {
+  background-color: var(--secondary-bgColor);
+}
+
+.text-color-green {
+  color: var(--principal-bgColor);
+}
+
+.nav-link > li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.nav-link > li:hover::after {
+  width: 85%;
+}
+
+.nav-link > li:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--tertiary-bgColor);
+}
+
+.footer ul li {
+  font-size: 24px;
+  font-family: var(--text-font);
+}
+
+.footer-link > li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.footer-link > li:hover::after {
+  width: calc(100% - 32px);
+}
+
+.footer-link > li:hover {
+  cursor: pointer;
+}
+
+.dp-card {
+  background-color: var(--dp-bgColor);
+  max-width: 560px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+}
+.dp-card .dp-title h2 {
+  z-index: 2;
+  font-size: 48px;
+  font-family: var(--title-font);
+  color: var(--principal-bgColor);
+}
+.dp-card .dp-title button {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 14px;
+  color: var(--secondary-fontColor);
+  background-color: var(--secondary-bgColor);
+}
+.dp-card p {
+  font-size: 14px;
+  color: var(--dp-text-color);
+  max-width: 260px;
+}
+.dp-card .img-position {
+  bottom: -18%;
+  left: -9%;
+}
+
+.herobanner .herobanner-title {
+  font-size: 224px;
+  font-family: var(--title-font);
+  line-height: 1.1;
+  padding-bottom: 120px;
+}
+.herobanner .herobanner-text {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+.herobanner .herobanner-text p:first-child::after {
+  content: url(icons/stars1.svg);
+  position: absolute;
+  right: calc(0px - 15%);
+  top: calc(0px - 70%);
+}
+.herobanner .herobanner-text p:last-child::before {
+  content: url(icons/stars2.svg);
+  position: absolute;
+  top: calc(0px - 40%);
+  left: calc(0px - 15%);
+}
+.herobanner .herobanner-text p {
+  font-weight: 400;
+}
+.herobanner .herobanner-text p span {
+  color: var(--secondary-bgColor);
+  font-style: 700;
+}
+.herobanner .button {
+  background-color: var(--secondary-bgColor);
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+.herobanner .button p {
+  color: var(--secondary-fontColor);
+  font-size: 24px;
+}/*# sourceMappingURL=app.css.map */
