@@ -12,7 +12,7 @@
     
     <!-- <div id="sword-model"  style="width: 800px; height: 800px;"></div> -->
     <section class="herobanner flex flex-col items-center">
-        <h1 class="herobanner-title">MARCHÉ CON(SCIENT)</h1>
+        <h1 class="herobanner-title">MARCHÉ<span>(CON)</span>SCIENT</h1>
         <div class="herobanner-text text-center flex flex-col gap-6 pb-11">
             <p class="relative">Découvrez une expérience d'achat en ligne <br> unique, engageante et qui se dégrade à chaque étape.</p>
             <p class="relative"><span>PARCOUREZ</span>, <span>EXPLORER</span>, et <span>PROFITEZ</span> <br> de notre sélection en fonction de chaque saison.</p>
@@ -27,54 +27,88 @@
         </div>
     </section>
 
-    <section class="dp flex flex-wrap items-center justify-center gap-14 py-16">
+    <section class="dp flex flex-wrap items-center justify-center gap-20 pt-20 pb-24">
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
     </section>
     
-    <section class="info py-16">
-        <div class="banner">
-            <p>Le reveil sonne <span><img src="" alt="bombe"></span>Chaque clic est une arme à double tranchant</p>
+    <section class="info py-24 flex flex-col">
+        <div class="banner flex mb-32">
+            <p class="flex banderole">
+                Le reveil sonne
+                <span class="contents">
+                    <img src="./public/icons/bombe.svg" alt="bombe">
+                </span>
+                Chaque clic est une arme à double tranchant
+            </p>
         </div>
-        <div class="info-card">
-            <div class="">
-                <h2><span>REVEILLEZ</span> VOUS</h2>
-                <div>
-                    <p>Notre mission est simple : montrer l'impact réel de nos choix de consommation.</p>
-                    <p>À travers une expérience d'achat unique, nous vous invitons à réfléchir et à agir pour un avenir plus durable.</p>
+        <div class="info-card flex flex-col gap-24 w-full m-auto max-w-7xl">
+
+            <div class="card-banner card1 rounded-2xl relative">
+                <h2 class="pl-12 pt-4"><span>REVEILLEZ</span> VOUS</h2>
+                <div class="pt-14 pl-28">
+                    <p class="text-3xl max-w-xl">Notre mission est simple : montrer l'impact réel de nos choix de consommation.</p>
+                    <p class="text-3xl max-w-xl">À travers une expérience d'achat unique, nous vous invitons à réfléchir et à agir pour un avenir plus durable.</p>
                 </div>
-                <span class="oeil">
-                    <img src="" alt="">
+                <span class="oeil absolute">
+                    <img src="./public/icons/oeil.svg" alt="oeil">
                 </span>
-                <span class="idea">
-                    <img src="" alt="">
+                <span class="idea absolute">
+                    <img src="./public/icons/ampoule.svg" alt="">
                 </span>
             </div>
 
-            <div class="">
-                <h2>CHAQUE <span>CHOIX</span> COMPTE<span>.</span></h2>
-                <div>
-                    <p>L'écoresponsabilité est notre réponse urgente à un monde en crise écologique. <br> Nous vous guidons pour comprendre et adopter des pratiques qui préservent notre planète.</p>
+            <div class="card-banner card2 rounded-2xl relative">
+                <h2 class="pl-12 pt-4">CHAQUE <span>CHOIX</span> COMPTE<span>.</span></h2>
+                <div class="pt-14 pl-28">
+                    <p class="text-3xl max-w-xl">L'écoresponsabilité est notre réponse urgente à un monde en crise écologique. <br> Nous vous guidons pour comprendre et adopter des pratiques qui préservent notre planète.</p>
                 </div>
-                <span class="fleure">
-                    <img src="" alt="">
+                <span class="fleur absolute">
+                    <img src="./public/icons/fleur.svg" alt="fleur">
                 </span>
-                <span class="warning">
-                    <img src="" alt="">
+                <span class="warning absolute">
+                    <img src="./public/icons/warning.svg" alt="warning">
                 </span>
             </div>
 
-            <div class="">
-                <h2><span>COMMENT</span> ÇA MARCHE <span> ?</span></h2>
-                <div>
-                    <p>Une expérience révélatrice. <br>
+            <div class="card-banner card3 rounded-2xl relative">
+                <h2 class="pl-12 pt-4"><span>COMMENT</span> ÇA MARCHE <span> ?</span></h2>
+                <div class="pt-14 pl-28">
+                    <p class="text-3xl max-w-xl">Une expérience révélatrice. <br>
                         Commencez par une navigation simple et découvrez progressivement les conséquences environnementales cachées derrière chaque achat. <br>
                         Un parcours qui transforme la conscience en action.</p>
                 </div>
-                <span class="curseur">
-                    <img src="" alt="">
+                <span class="curseur absolute">
+                    <img src="./public/icons/curseur.svg" alt="curseur">
                 </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bottom-page pt-16 relative">
+        <h2>
+            ENGAGEZ-VOUS
+            <span class="coeur absolute">
+                <img src="./public/icons/coeur.svg" alt="coeur">
+            </span>
+            <span class="epee absolute">
+                <img src="./public/icons/epee.svg" alt="epee">
+            </span>
+        </h2>
+        <div>
+            <div class="text-bottom-page flex flex-col gap-6">
+                <p>Passez à l'action. Votre voyage ici n'est qu'un début.</p>
+                <p>Partagez, discutez, et intégrez l'écoresponsabilité dans votre quotidien. <br><br> Rejoignez-nous dans notre quête pour un futur plus vert.</p>
+            </div>
+            <div class="button-bottom-page flex gap-6">
+                <button>
+                    <img src="./public/icons/instagram.svg" alt="insta">
+                </button>
+                <button>
+                    <img src="./public/icons/tiktok.svg" alt="tiktok">
+                </button>
             </div>
         </div>
     </section>
