@@ -3,7 +3,12 @@
 }
 
 .logo {
-  background-color: var(--secondary-bgColor);
+  font-size: 32px;
+  font-family: var(--title-font);
+}
+.logo span {
+  color: var(--secondary-bgColor);
+  font-family: var(--title-font);
 }
 
 .cart-button {
