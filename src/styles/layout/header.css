@@ -1,20 +1,20 @@
-.header-bg-color{
+.header-bg-color {
   background-color: var(--principal-bgColor);
 }
 
-.logo{
+.logo {
   background-color: var(--secondary-bgColor);
 }
 
-.cart-button{
+.cart-button {
   background-color: var(--secondary-bgColor);
 }
 
-.text-color-green{
+.text-color-green {
   color: var(--principal-bgColor);
 }
 
-.nav-link > li::after{
+.nav-link > li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -23,13 +23,13 @@
   height: 4px;
   background-color: var(--secondary-bgColor);
   border-radius: 4px;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
 }
 
-.nav-link > li:hover::after{
+.nav-link > li:hover::after {
   width: 85%;
 }
 
-.nav-link > li:hover{
+.nav-link > li:hover {
   cursor: pointer;
-}
+}/*# sourceMappingURL=header.css.map */
