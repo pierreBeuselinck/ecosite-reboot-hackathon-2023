@@ -1394,4 +1394,10 @@ body {
     transform: rotateZ(20deg) translateY(20px);
   }
 }
+.livraison-absolute-text, .paiement-absolute-text, .confirmation-absolute-text {
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=main.css.map */

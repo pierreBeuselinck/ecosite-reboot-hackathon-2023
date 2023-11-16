@@ -8,7 +8,23 @@
 </head>
 <body>
     {% include "src/templates/header/header3.html" %}
-
+    <section class="barre-avancement flex items-center justify-center pt-24">
+        <div class="bg-normal barre-avancement-camion relative">
+            <img src="./public/icons/camion-barre.svg" alt="camion">
+            <span class="livraison-absolute-text">LIVRAISON</span>
+        </div>
+        <span class="sidebar-break1"></span>
+        <span class="sidebar-break2"></span>
+        <div class="bg-sombre relative">
+            <img src="./public/icons/carte.svg" alt="carte de crédit">
+            <span class="paiement-absolute-text">PAIEMENT</span>
+        </div>
+        <span class="sidebar-right relative"></span>
+        <div class="bg-sombre relative">
+            <img src="./public/icons/horloge.svg" alt="horloge">
+            <span class="confirmation-absolute-text">CONFIRMATION</span>
+        </div>
+    </section>
 
 
 </body>
