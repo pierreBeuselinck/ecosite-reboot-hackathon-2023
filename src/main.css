@@ -700,7 +700,7 @@ body {
   --text-font: "League Spartan";
 }
 
-@keyframes hang {
+@keyframes fpHang {
   0%, 100% {
     transform: rotate(-3deg);
   }
@@ -714,10 +714,10 @@ body {
 }
 
 .click-hang-animate {
-  animation: hang 3s ease-in-out infinite;
+  animation: fpHang 3s ease-in-out infinite;
 }
 
-@keyframes fall {
+@keyframes fpFall {
   to {
     transform: translateY(500px) rotate(90deg);
     opacity: 0;
@@ -728,7 +728,7 @@ body {
 }
 
 .click-falldown-animation {
-  animation: fall 1s forwards ease-in;
+  animation: fpFall 1s forwards ease-in;
 }
 
 .click-falldown-faq {
@@ -736,14 +736,14 @@ body {
 }
 
 .click-falldown-faq-animation {
-  animation: fall 1s forwards ease-in;
+  animation: fpFall 1s forwards ease-in;
 }
 
 .click-letterFalldown {
   cursor: pointer;
 }
 
-@keyframes letterfall {
+@keyframes FPletterfall {
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -755,7 +755,7 @@ body {
 }
 .click-letter-falldown-animation {
   display: inline-block;
-  animation: letterfall 1s ease forwards;
+  animation: FPletterfall 1s ease forwards;
 }
 
 .click-switchImg {
