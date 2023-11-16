@@ -1481,4 +1481,33 @@ input[type=radio]:checked ~ label::after {
 .inputChecked {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+.title-confirmation {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.text-confirmation {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bug-confirmation-bottom {
+  position: absolute;
+  bottom: -100%;
+  left: 10%;
+}
+
+.bug-confirmation-top {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+.bug-confirmation-bottom-left {
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+}
 /*# sourceMappingURL=main.css.map */
