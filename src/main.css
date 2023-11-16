@@ -1248,6 +1248,10 @@ body {
   display: flex;
   width: 2400px;
 }
+.banner .banderole-animation-classement {
+  display: flex;
+  width: 1600px;
+}
 .banner p {
   display: flex;
   font-size: 120px;
