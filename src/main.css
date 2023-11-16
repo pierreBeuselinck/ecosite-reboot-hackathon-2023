@@ -452,6 +452,9 @@ video {
 .mt-28{
   margin-top: 7rem;
 }
+.mt-32{
+  margin-top: 8rem;
+}
 .mt-4{
   margin-top: 1rem;
 }
@@ -1618,6 +1621,21 @@ input[type=radio]:checked ~ label::after {
 }
 .herobanner-classement h1 span {
   color: var(--secondary-bgColor);
+  font-family: var(--title-font);
+}
+
+.classement-finale h2 {
+  font-size: 28px;
+}
+.classement-finale h2 span {
+  font-size: 28px;
+}
+.classement-finale h3 {
+  font-size: 48px;
+  font-family: var(--title-font);
+}
+.classement-finale h3 span {
+  font-size: 48px;
   font-family: var(--title-font);
 }
 /*# sourceMappingURL=main.css.map */

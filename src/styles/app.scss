@@ -652,3 +652,22 @@ input[type = radio]:checked ~ label::after{
   }
 }
 
+
+.classement-finale{
+  h2{
+    font-size: 28px;
+
+    span{
+      font-size: 28px;
+    }
+  }
+
+  h3{
+    font-size: 48px;
+    font-family: var(--title-font);
+    span{
+      font-size: 48px;
+      font-family: var(--title-font);
+    }
+  }
+}
