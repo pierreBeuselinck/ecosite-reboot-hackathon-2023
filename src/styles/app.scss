@@ -435,3 +435,37 @@ body{
     transform: translateY(20px) rotateZ(0deg);
   }
 }
+
+.anim-rotate{
+  animation-name: rotate;
+  animation-duration: .5s;
+  animation-delay: .3s;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(20deg);
+  }
+}
+
+.anim-rotate-bar{
+  animation-name: rotateBar;
+  animation-duration: .5s;
+  animation-delay: .3s;
+  animation-fill-mode: both;
+}
+
+@keyframes rotateBar{
+  0%{
+    transform: rotateZ(0deg) translateY(0px);
+  }
+  100%{
+    transform: rotateZ(20deg) translateY(20px);
+  }
+}
+
+

@@ -77,6 +77,16 @@ function animationInit() {
         });
       });
       
+      // Paiement : click sur camion
+      var sidebar = document.querySelector(".sidebar-break1");
+      var camionPaiement = document.querySelectorAll(".barre-avancement-camion");
+      camionPaiement.forEach(element => {
+          element.addEventListener('click', function () {
+              this.classList.add('anim-rotate');
+              sidebar.classList.add('anim-rotate-bar');
+          });
+      });
+
 
 }
 
