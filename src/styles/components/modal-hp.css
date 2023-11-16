@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* Style de la modale */
+.modal {
+  position: relative;
+  display: none; /* Caché par défaut */
+  position: fixed; /* Reste en place même lors du défilement */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permet le défilement si nécessaire */
+  background-color: rgb(0, 0, 0); /* Couleur de fond */
+  background-color: rgba(0, 0, 0, 0.4); /* Noir avec opacité */
+  z-index: 9999;
+}
+
+/* Style du contenu de la modale */
+.modal-content {
+  border-radius: 8px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% du haut et centré horizontalement */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Largeur de la modale */
+}
+
+/* Style du bouton de fermeture */
+.close {
+  position: absolute;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: -20px;
+  right: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal--hp-start {
+  color: #000000 !important;
+}
+.modal--hp-start .button {
+  background-color: var(--secondary-bgColor);
+  cursor: pointer;
+}
+.modal--hp-start .modal-content {
+  padding: 20px 0;
+}/*# sourceMappingURL=modal-hp.css.map */

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@keyframes fpHang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+.click-hang {
+  cursor: pointer;
+  transform-origin: top center;
+}
+
+.click-hang-animate {
+  animation: fpHang 3s ease-in-out infinite;
+}
+
+@keyframes fpFall {
+  to {
+    transform: translateY(500px) rotate(90deg);
+    opacity: 0;
+  }
+}
+.click-falldown {
+  cursor: pointer;
+}
+
+.click-falldown-animation {
+  animation: fpFall 1s forwards ease-in;
+}
+
+.click-falldown-faq {
+  cursor: pointer;
+}
+
+.click-falldown-faq-animation {
+  animation: fpFall 1s forwards ease-in;
+}
+
+.click-letterFalldown {
+  cursor: pointer;
+}
+
+@keyframes FPletterfall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}
+.click-letter-falldown-animation {
+  display: inline-block;
+  animation: FPletterfall 1s ease forwards;
+}
+
+.click-switchImg {
+  cursor: pointer;
+}
+
+.click-switchImg-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.click-switchImg-hide {
+  opacity: 0;
+}
+
+@keyframes explosion {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.click-headerCart-explosion {
+  animation: explosion 0.5s ease-out forwards;
+}
+
+@keyframes starFlyHP {
+  from {
+    transform: translate(0, 0);
+    display: block;
+  }
+  to {
+    transform: translate(300px, -300px); /* Ajustez pour l'effet désiré */
+    display: none;
+  }
+}
+.herobanner.animate-stars p:first-child::after,
+.herobanner.animate-stars p:last-child::before {
+  animation: starFlyHP 1s ease forwards;
+}
+
+/* Animation Hang */
+@keyframes hphang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+.hp-product-cards-hang-btn-animation {
+  transform: rotate(120deg);
+  transition: transform 0.5s;
+}
+
+.hp-click-switchImg-animation {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hp-click-switchImg-hide {
+  opacity: 0;
+}
+
+.livraison-stepper-visible {
+  display: flex;
+}
+
+.livraison-stepper-hidden {
+  display: none;
+}/*# sourceMappingURL=animations.css.map */
