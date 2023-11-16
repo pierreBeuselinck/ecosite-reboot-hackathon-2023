@@ -1252,6 +1252,15 @@ body {
   background-color: #6A796E;
 }
 
+.paiement-container-mid {
+  padding: 0 170px;
+  gap: 54px;
+}
+.paiement-container-mid .paiement-left {
+  max-width: 56%;
+  width: 100%;
+}
+
 .paiement-container {
   padding: 0 72px;
   gap: 54px;
