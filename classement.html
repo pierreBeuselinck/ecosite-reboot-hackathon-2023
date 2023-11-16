@@ -8,9 +8,21 @@
 
 </head>
 <body>
-    {% include "src/templates/header/header.html"  %}
-
-    
-    {% include "src/templates/footer/footer.html"  %}
+    <section class="herobanner-classement flex flex-col items-center justify-center">
+        <h1>
+            CLASSEMENT DES <span>CON</span>SCIENT<span>.</span>
+        </h1>
+        <img src="./images/classement.png" alt="classement">
+        <div class="flex gap-4">
+            <button class="flex gap-4">
+                <img src="./icons/partage.svg" alt="partage">
+                <p>Partager</p>
+            </button>
+            <button class="flex gap-4">
+                <img src="./icons/replay.svg" alt="restart">
+                <p>Re(con)mencer</p>
+            </button>
+        </div>
+    </section>
 </body>
 </html>

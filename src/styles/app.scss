@@ -587,5 +587,16 @@ input[type = radio]:checked ~ label::after{
   left: 0;
 }
 
-
+.herobanner-classement{
+  h1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 96px;
+    font-family: var(--title-font);
+    span{
+      color: var(--secondary-bgColor);
+      font-family: var(--title-font);
+    }
+  }
+}
 
