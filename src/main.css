@@ -533,6 +533,9 @@ video {
 .gap-3{
   gap: 0.75rem;
 }
+.gap-32{
+  gap: 8rem;
+}
 .gap-4{
   gap: 1rem;
 }
@@ -624,6 +627,9 @@ video {
 .pl-12{
   padding-left: 3rem;
 }
+.pl-16{
+  padding-left: 4rem;
+}
 .pl-28{
   padding-left: 7rem;
 }
@@ -635,6 +641,9 @@ video {
 }
 .pt-20{
   padding-top: 5rem;
+}
+.pt-24{
+  padding-top: 6rem;
 }
 .pt-28{
   padding-top: 7rem;
@@ -1627,9 +1636,6 @@ input[type=radio]:checked ~ label::after {
 .classement-finale h2 {
   font-size: 28px;
 }
-.classement-finale h2 span {
-  font-size: 28px;
-}
 .classement-finale h3 {
   font-size: 48px;
   font-family: var(--title-font);
@@ -1637,5 +1643,47 @@ input[type=radio]:checked ~ label::after {
 .classement-finale h3 span {
   font-size: 48px;
   font-family: var(--title-font);
+  color: var(--secondary-bgColor);
+}
+.classement-finale .classement-finale-left-info {
+  background-color: var(--tertiary-bgColor);
+  padding: 32px;
+  border-radius: 18px;
+}
+.classement-finale .border-classement {
+  border: 1px solid var(--secondary-bgColor);
+}
+
+.classement-player {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 32px 8px 16px;
+  border-radius: 8px;
+  min-width: 500px;
+  width: 100%;
+}
+.classement-player .nb-classement {
+  font-size: 32px;
+}
+.classement-player .classement-name {
+  font-size: 24px;
+}
+.classement-player .btn-classement {
+  width: 57px;
+  height: 57px;
+  font-size: 18px;
+  background-color: var(--tertiary-bgColor);
+  padding: 8px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classement-player .btn-classement p {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 1px solid var(--secondary-bgColor);
+  border-radius: 100%;
 }
 /*# sourceMappingURL=main.css.map */

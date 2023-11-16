@@ -656,10 +656,6 @@ input[type = radio]:checked ~ label::after{
 .classement-finale{
   h2{
     font-size: 28px;
-
-    span{
-      font-size: 28px;
-    }
   }
 
   h3{
@@ -668,6 +664,54 @@ input[type = radio]:checked ~ label::after{
     span{
       font-size: 48px;
       font-family: var(--title-font);
+      color: var(--secondary-bgColor);
+    }
+  }
+
+  .classement-finale-left-info{
+    background-color: var(--tertiary-bgColor);
+    padding: 32px;
+    border-radius: 18px;
+  }
+
+  .border-classement{
+    border: 1px solid var(--secondary-bgColor);
+  }
+}
+
+.classement-player{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 32px 8px 16px;
+  border-radius: 8px;
+  min-width: 500px;
+  width: 100%;
+  
+  .nb-classement{
+    font-size: 32px;
+  }
+
+  .classement-name{
+    font-size: 24px;
+  }
+
+  .btn-classement{
+    width: 57px;
+    height: 57px;
+    font-size: 18px;
+    background-color: var(--tertiary-bgColor);
+    padding: 8px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      border: 1px solid var(--secondary-bgColor);
+      border-radius: 100%;
     }
   }
 }
