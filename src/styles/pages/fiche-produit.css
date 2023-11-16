@@ -1,0 +1,125 @@
+.c-product-page {
+  max-width: 1364px;
+  padding: 0 32px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.c-product-page__visual-wrapper {
+  width: 533px;
+  height: 600px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.c-product-page__visual {
+  width: 100%;
+  height: auto;
+}
+
+.c-product-page__sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.c-product-page__sizes span {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #6A796E;
+}
+.c-product-page__sizes span:hover, .c-product-page__sizes span:focus {
+  background-color: #6A796E;
+}
+
+.c-product-page__card-masonry-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.c-product-page__card-masonry {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.c-product-page__card-masonry--2 {
+  grid-template-columns: 1fr 0.8fr;
+  gap: 32px;
+}
+
+.c-product-page__card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 24px;
+  padding: 32px;
+  background: var(--tertiary-bgColor);
+}
+
+.c-product-page__card--avis {
+  max-width: 570px;
+  width: 100%;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.c-product-page__faq-title {
+  padding-right: 170px;
+}
+
+.c-product-page__faq {
+  color: #0D1710 !important;
+  border-radius: 24px;
+  background: #EE7748;
+  padding: 32px 40px;
+  display: flex;
+  gap: 16px;
+}
+.c-product-page__faq hr {
+  background-color: #0D1710;
+  height: 1px;
+  border: 0;
+}
+
+.c-product-page__faq-content {
+  display: flex;
+  max-width: 918px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.c-product-page__faq-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  gap: 16px;
+}
+
+.c-product-page__avis-wrapper {
+  max-width: 990px;
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.c-product-page--sticker-review {
+  right: -35%;
+  bottom: 20%;
+}
+
+.c-product-page--sticker-faq {
+  right: 2%;
+  top: -15%;
+}/*# sourceMappingURL=fiche-produit.css.map */

@@ -1,0 +1,55 @@
+.header-bg-color {
+  background-color: var(--principal-bgColor);
+}
+
+.logo {
+  font-size: 32px;
+  font-family: var(--title-font);
+}
+.logo span {
+  color: var(--secondary-bgColor);
+  font-family: var(--title-font);
+}
+
+.cart-button {
+  background-color: var(--secondary-bgColor);
+}
+
+.text-color-green {
+  color: var(--principal-bgColor);
+}
+
+.nav-link > li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.nav-link > li:hover::after {
+  width: 85%;
+}
+
+.nav-link > li:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 18px;
+  min-height: 122px;
+}/*# sourceMappingURL=header.css.map */

@@ -87,49 +87,6 @@ function animationInit() {
     });
   });
 
-  // Paiement : click choix
-  var btnRadio1 = document.getElementById('radio1');
-  var btnRadio2 = document.getElementById('radio2');
-  var btnRadio3 = document.getElementById('radio3');
-  var ParentbtnRadio1 = document.getElementById('btn1');
-  var ParentbtnRadio2 = document.getElementById('btn2');
-  var ParentbtnRadio3 = document.getElementById('btn3');
-  
-  // Fonction pour retirer la classe 'inputChecked' de tous les éléments parents
-  function removeInputCheckedClassFromAll() {
-      ParentbtnRadio1.classList.remove('inputChecked');
-      ParentbtnRadio2.classList.remove('inputChecked');
-      ParentbtnRadio3.classList.remove('inputChecked');
-  }
-  
-  // Fonction pour mettre à jour la classe de l'élément parent selon l'état du bouton radio
-  function updateParentClass(btnRadio, parentElement) {
-      if (btnRadio.checked) {
-          removeInputCheckedClassFromAll(); // Retire la classe de tous les éléments parents
-          parentElement.classList.add('inputChecked');
-      }
-  }
-  
-  // Ajout d'écouteurs d'événements de type 'change' pour les boutons radio
-  btnRadio1.addEventListener('change', function() {
-      updateParentClass(btnRadio1, ParentbtnRadio1);
-  });
-  
-  btnRadio2.addEventListener('change', function() {
-      updateParentClass(btnRadio2, ParentbtnRadio2);
-  });
-  
-  btnRadio3.addEventListener('change', function() {
-      updateParentClass(btnRadio3, ParentbtnRadio3);
-  });
-  
-  // Au chargement initial de la page, vérifier et appliquer les classes correctement
-  updateParentClass(btnRadio1, ParentbtnRadio1);
-  updateParentClass(btnRadio2, ParentbtnRadio2);
-  updateParentClass(btnRadio3, ParentbtnRadio3);
-  
-
-
   //Header : bouton explosion 
 
   document.querySelector('.click-headerCart-explosion-trigger').addEventListener('click', function () {
@@ -156,9 +113,7 @@ function animationInit() {
     });
   });
 
-
   //Homepage : product card hang btn
-
 
   document.querySelectorAll('.hp-product-cards-hang-btn').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -223,11 +178,10 @@ function animationInit() {
     document.getElementById('myModal').style.display = "none";
   });
 
-    // Fermer la modale lorsque l'utilisateur clique sur le symbole (×)
-    document.getElementsByClassName('agree')[0].addEventListener('click', function () {
-      document.getElementById('myModal').style.display = "none";
-    });
-  
+  // Fermer la modale lorsque l'utilisateur clique sur le symbole (×)
+  document.getElementsByClassName('agree')[0].addEventListener('click', function () {
+    document.getElementById('myModal').style.display = "none";
+  });
 
 }
 
