@@ -78,7 +78,7 @@ function animationInit() {
       });
       
       // Paiement : click sur camion
-      var sidebar = document.querySelector(".sidebar-break1");
+      var sidebar = document.querySelectorAll(".sidebar-break1");
       var camionPaiement = document.querySelectorAll(".barre-avancement-camion");
       camionPaiement.forEach(element => {
           element.addEventListener('click', function () {
