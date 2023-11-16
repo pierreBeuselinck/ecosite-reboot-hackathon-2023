@@ -139,22 +139,21 @@ function animationInit() {
 
   //HP : changement de l'image au clique
 
-  document.querySelectorAll('.hp-click-switchImg').forEach(button => {
-    button.addEventListener('click', function () {
-      const imageContainer = document.querySelector('.dp-card-img-wrapper');
-      const oldImage = imageContainer.querySelector('.hp-click-switchImg-animation');
+  document.querySelector('.hp-click-switchImg').addEventListener('click', function () {
+    document.querySelectorAll('.dp-card-img-wrapper').forEach(container => {
+      const oldImage = container.querySelector('.hp-click-switchImg-animation');
 
       const newImage = document.createElement('img');
-      newImage.src = 'images/sapin-sans-epine.png';
-      newImage.alt = 'Image';
+      newImage.src = 'images/sapin-sans-epine.png'; // Mettez à jour avec le nouveau chemin d'image
+      newImage.alt = 'Nouvelle Image';
       newImage.classList.add('hp-click-switchImg-animation', 'hp-click-switchImg-hide');
 
-      imageContainer.appendChild(newImage);
+      container.appendChild(newImage);
 
       setTimeout(() => {
         oldImage.classList.add('hp-click-switchImg-hide');
         newImage.classList.remove('hp-click-switchImg-hide');
-      }, 100);
+      }, 500);
 
       oldImage.addEventListener('transitionend', () => {
         oldImage.remove();
@@ -162,6 +161,24 @@ function animationInit() {
     });
   });
 
+  // Header : tooltips
+
+  document.getElementById('logoContainer').addEventListener('mouseover', function () {
+    const tooltip = this.querySelector('.tooltip');
+    tooltip.style.display = tooltip.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // HP: modal d'entree
+
+  // Ouvrir la modale au chargement de la page
+  window.onload = function () {
+    document.getElementById('myModal').style.display = "block";
+  }
+
+  // Fermer la modale lorsque l'utilisateur clique sur le symbole (×)
+  document.getElementsByClassName('close')[0].addEventListener('click', function () {
+    document.getElementById('myModal').style.display = "none";
+  });
 
 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="./src/main.css">
 
 </head>
+
 <body>
-    {% include "src/templates/header/header3.html"  %}
+    {% include "src/templates/header/header3.html" %}
 
     <section class="barre-avancement flex items-center justify-center pt-8">
         <div class="bg-normal barre-avancement-camion relative">
@@ -30,7 +32,8 @@
 
     <section class="paiement-container flex mt-28">
         <form class="paiement-left flex flex-col gap-14">
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim"> <!-- add inputChecked en class -->
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim">
+                <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/magasin.svg" alt="magasin">
                 </span>
@@ -39,10 +42,11 @@
                     <p>Dès le landemain</p>
                     <span>Gratuit</span>
                 </div>
-                <input type="radio" name="radio" id="radio1" style="display: none;">
+                <input type="radio" name="radio" id="radio1" class="button-radio-form" style="display: none;">
                 <label for="radio1"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim"> <!-- add inputChecked en class -->
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim">
+                <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/camion.svg" alt="camion">
                 </span>
@@ -54,7 +58,8 @@
                 <input type="radio" name="radio" id="radio2" style="display: none;">
                 <label for="radio2"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim"> <!-- add inputChecked en class -->
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim">
+                <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/colis.svg" alt="colis">
                 </span>
@@ -71,7 +76,7 @@
         <div class="paiement-right flex flex-col gap-8">
             <div class="paiement-right-top flex flex-col p-8">
                 <div class="flex justify-between">
-                    <p>Prix de la culpabilité  (1 article)</p>
+                    <p>Prix de la culpabilité (1 article)</p>
                     <p>34,99€</p>
                 </div>
                 <div class="divider my-4"></div>
@@ -85,7 +90,8 @@
                     <p>34,99€</p>
                 </div>
                 <div class="divider mt-4"></div>
-                <a href="./paiement.html"><button class="bouton-poursuivre mt-6 px-8 py-4" style="color: #121E15; width: 100%;">Poursuivez la commande</button></a>
+                <a href="./paiement.html"><button class="bouton-poursuivre mt-6 px-8 py-4"
+                        style="color: #121E15; width: 100%;">Poursuivez la commande</button></a>
             </div>
             <div class="paiement-right-bottom flex flex-col p-8 gap-6">
                 <div class="flex gap-3">
@@ -118,5 +124,8 @@
             </div>
         </div>
     </section>
+    <script type="module" src="/src/main.js"></script>
+
 </body>
+
 </html>

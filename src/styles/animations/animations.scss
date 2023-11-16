@@ -167,3 +167,13 @@
 .hp-click-switchImg-hide {
     opacity: 0;
 }
+
+//Livraison : stepper
+
+.livraison-stepper-visible {
+    display: flex;
+}
+
+.livraison-stepper-hidden {
+    display: none;
+}

@@ -9,6 +9,17 @@
 </head>
 
 <body>
+
+    <!-- Modale -->
+    <div id="myModal" class="modal">
+        <!-- Contenu de la modale -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Contenu de votre modale ici...</p>
+        </div>
+    </div>
+
+
     {% include "src/templates/header/header.html" %}
 
     <!-- <div id="sword-model"  style="width: 800px; height: 800px;"></div> -->
@@ -37,7 +48,7 @@
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
     </section>
-    
+
     <section class="info py-24 flex flex-col">
         <div class="banner-wrapper">
             <div class="banner flex mb-32">
@@ -75,8 +86,10 @@
             <div class="card-banner card1 rounded-2xl relative">
                 <h2 class="pl-12 pt-4"><span>REVEILLEZ</span> VOUS</h2>
                 <div class="pt-14 pl-28">
-                    <p class="text-3xl max-w-xl">Notre mission est simple : montrer l'impact réel de nos choix de consommation.</p>
-                    <p class="text-3xl max-w-xl">À travers une expérience d'achat unique, nous vous invitons à réfléchir et à agir pour un avenir plus durable.</p>
+                    <p class="text-3xl max-w-xl">Notre mission est simple : montrer l'impact réel de nos choix de
+                        consommation.</p>
+                    <p class="text-3xl max-w-xl">À travers une expérience d'achat unique, nous vous invitons à réfléchir
+                        et à agir pour un avenir plus durable.</p>
                 </div>
                 <span class="oeil absolute">
                     <img src="./public/icons/oeil.svg" alt="oeil">
@@ -89,7 +102,9 @@
             <div class="card-banner card2 rounded-2xl relative">
                 <h2 class="pl-12 pt-4">CHAQUE <span>CHOIX</span> COMPTE<span>.</span></h2>
                 <div class="pt-14 pl-28">
-                    <p class="text-3xl max-w-xl">L'écoresponsabilité est notre réponse urgente à un monde en crise écologique. <br> Nous vous guidons pour comprendre et adopter des pratiques qui préservent notre planète.</p>
+                    <p class="text-3xl max-w-xl">L'écoresponsabilité est notre réponse urgente à un monde en crise
+                        écologique. <br> Nous vous guidons pour comprendre et adopter des pratiques qui préservent notre
+                        planète.</p>
                 </div>
                 <span class="fleur absolute">
                     <img src="./public/icons/fleur.svg" alt="fleur">
@@ -103,7 +118,8 @@
                 <h2 class="pl-12 pt-4"><span>COMMENT</span> ÇA MARCHE <span> ?</span></h2>
                 <div class="pt-14 pl-28">
                     <p class="text-3xl max-w-xl">Une expérience révélatrice. <br>
-                        Commencez par une navigation simple et découvrez progressivement les conséquences environnementales cachées derrière chaque achat. <br>
+                        Commencez par une navigation simple et découvrez progressivement les conséquences
+                        environnementales cachées derrière chaque achat. <br>
                         Un parcours qui transforme la conscience en action.</p>
                 </div>
                 <span class="curseur absolute">
@@ -127,7 +143,8 @@
         <div>
             <div class="text-bottom-page flex flex-col gap-6">
                 <p>Passez à l'action. Votre voyage ici n'est qu'un début.</p>
-                <p>Partagez, discutez, et intégrez l'écoresponsabilité dans votre quotidien. <br><br> Rejoignez-nous dans notre quête pour un futur plus vert.</p>
+                <p>Partagez, discutez, et intégrez l'écoresponsabilité dans votre quotidien. <br><br> Rejoignez-nous
+                    dans notre quête pour un futur plus vert.</p>
             </div>
             <div class="button-bottom-page flex gap-6">
                 <button>

@@ -38,3 +38,18 @@
 .nav-link > li:hover{
   cursor: pointer;
 }
+
+.tooltip {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 18px;
+  min-height: 122px;
+}
