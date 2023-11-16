@@ -9,20 +9,226 @@
 </head>
 <body>
     <section class="herobanner-classement flex flex-col items-center justify-center">
+        <img src="./icons/logo.svg" class="absolute" style="top: 0; left: 0;" alt="">
         <h1>
             CLASSEMENT DES <span>CON</span>SCIENT<span>.</span>
         </h1>
         <img src="./images/classement.png" alt="classement">
-        <div class="flex gap-4">
-            <button class="flex gap-4">
+        <div class="flex gap-6 items-center">
+            <button class="flex items-center gap-4 px-8 py-2 rounded-full" style="background-color: var(--secondary-bgColor);">
                 <img src="./icons/partage.svg" alt="partage">
-                <p>Partager</p>
+                <p style="color: black; font-size: 24px;">Partager</p>
             </button>
-            <button class="flex gap-4">
+            <button class="flex items-center gap-4 px-8 py-2 rounded-full" style="border: 1px solid var(--secondary-bgColor);">
                 <img src="./icons/replay.svg" alt="restart">
-                <p>Re(con)mencer</p>
+                <p style="color: var(--secondary-bgColor); font-size: 24px;">Re(con)mencer</p>
             </button>
         </div>
+
+        <div class="banner-wrapper mt-32">
+            <div class="banner flex mb-32">
+                <div class="flex banderole">
+                    <p class="banderole-animation-classement uppercase">
+                        BILAN DE VOTRE VOYAGE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxG.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                        ÇA PIQUE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxD.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                    </p>
+                </div>
+                <div class="flex banderole">
+                    <p class="banderole-animation-classement uppercase">
+                        BILAN DE VOTRE VOYAGE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxG.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                        ÇA PIQUE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxD.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                    </p>
+                </div>
+                <div class="flex banderole">
+                    <p class="banderole-animation-classement uppercase">
+                        BILAN DE VOTRE VOYAGE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxG.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                        ÇA PIQUE
+                        <span class="contents">
+                            <img src="./public/icons/yeuxD.svg" class="mx-8" style="height: 100%;" alt="oeil">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div class="flex classement-finale gap-32 pl-16 pt-24">
+        <div class="flex flex-col gap-24">
+            <div class="flex flex-col gap-8">
+                <h2>La consommation de notre site (et de vous)</h2>
+                <div class="flex gap-6">
+                    <div class="classement-finale-left-info">
+                        <h3 class="flex"> <span>55,8</span> MILLIONS<span>.</span></h3>
+                        <p>De tonnes de gaz à effet de serre / an.</p>
+                    </div>
+                    <div class="classement-finale-left-info">
+                        <h3 class="flex"><span>310 890</span> KM EN VOITURE <span>.</span></h3>
+                        <p>C’est presque l’équivalence de la distance entre la Lune et la Terre.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-8">
+                <h2>Ce que nous faisons pour compenser</h2>
+                <div class="flex flex-col gap-6">
+                    <div class="classement-finale-left-info border-classement">
+                        <h3 class="flex"><span class="pr-2">27 </span> ARBRES<span>.</span></h3>
+                        <p>Par jour qui sont pantés pour compenser la consommation émise par notre site.</p>
+                    </div>
+                    <div class="classement-finale-left-info border-classement">
+                        <h3 class="flex"><span class="pr-2">4 </span> ASSOCIATIONS<span>.</span></h3>
+                        <p>Nous sommes engagés dans des associations spécialisées qui compensent  l’empreinte carbone. </p>
+                    </div>
+                    <div class="classement-finale-left-info border-classement">
+                        <h3 class="flex"><span class="pr-2">1 </span> MISSION<span>.</span></h3>
+                        <p>De dépollution par mois dans la France entière.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-6">
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">1</p>
+                    <img src="./icons/xj.png" alt="">
+                    <p class="classement-name">Xi Jinping</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>65,8 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">2</p>
+                   <img src="./icons/dt.png" alt="">
+                    <p class="classement-name">Donald Trump</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>60,4 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">3</p>
+                   <img src="./icons/vp.png" alt="">
+                    <p class="classement-name">Vladimir Poutine</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>35,8 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center" style="background-color: var(--secondary-bgColor);">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement" style="color: var(--tertiary-bgColor);">4</p>
+                   <img src="./icons/t.png" alt="">
+                    <p class="classement-name" style="color: var(--tertiary-bgColor);">Toi</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p style="color: var(--tertiary-bgColor);">34,8 kg</p>
+                    <p style="color: var(--tertiary-bgColor);">CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">5</p>
+                   <img src="./icons/em.png" alt="">
+                    <p class="classement-name">Emmanuel Macron</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>30,4 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">6</p>
+                   <img src="./icons/jb.png" alt="">
+                    <p class="classement-name">Joe Biden</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>28,9 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">7</p>
+                   <img src="./icons/jeff.png" alt="">
+                    <p class="classement-name">Jeff Bezos</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>9,8 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">8</p>
+                   <img src="./icons/gm.png" alt="">
+                    <p class="classement-name">Giorgia Meloni</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>9,3 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+            <div class="flex classement-player justify-between items-center">
+                <div class="flex items-center gap-3">
+                   <p class="nb-classement">9</p>
+                   <img src="./icons/pjp.png" alt="">
+                    <p class="classement-name">Patrick Jean Pouyanné</p> 
+                </div>
+                <div class="flex gap-2" style="font-size: 20px;">
+                    <p>8,8 kg</p>
+                    <p>CO2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bottom-page-classement mt-24 pt-16 relative">
+        <span class="coeur-classement absolute">
+                <img src="./public/icons/coeur.svg" alt="coeur">
+        </span>
+        <span class="fleur-classement absolute">
+            <img src="./public/icons/fleur.svg" alt="fleur">
+        </span>
+        <h2>
+            LA SOLUTION DU MARCHE <span style="color: white; font-family: var(--tile-font);">CON</span>SCIENT
+        </h2>
+        <div class="flex gap-8" style="padding: 0 150px;">
+            <div class="px-4 py-6 flex flex-col gap-4" style="background-color: #203726; border-radius: 16px;">
+                <h3 class="uppercase">LOCAL local local</h3>
+                <p>Si tu favorises l'achat de sapins locaux plutôt que d'importations, tu contribues à réduire ton empreinte carbone liée au transport. En plus, tu soutiens les économies locales et tu contribues à alléger la pression sur les habitats forestiers dans d'autres régions.</p>
+            </div>
+            <div  class="px-4 py-6 flex flex-col gap-4" style="background-color: #203726; border-radius: 16px;">
+                <h3 class="uppercase">Réutilisation des Sapins Artificiels</h3>
+                <p>Si tu préfères les sapins artificiels, pense à réutiliser le même arbre pendant plusieurs années plutôt que d'en acheter un nouveau chaque année. Cela contribue à réduire ton impact environnemental et à favoriser une approche plus durable des fêtes.</p>
+            </div>
+            <div  class="px-4 py-6 flex flex-col gap-4" style="background-color: #203726; border-radius: 16px;">
+                <h3 class="uppercase">pas de sapin, pas de problème</h3>
+                <p>Opte plutôt pour des décorations alternatives durables comme des décorations naturelles. Cette approche minimaliste célèbre les fêtes tout en limitant l'empreinte écologique associée à la production et à l'élimination des sapins.</p>
+            </div>
+        </div>
+        
+    </section>
+
 </body>
 </html>
