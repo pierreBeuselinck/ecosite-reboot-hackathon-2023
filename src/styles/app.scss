@@ -476,3 +476,70 @@ body{
 }
 
 
+.first-paiement-sidebar-break1{
+  transform: rotateZ(6deg) translateY(12px);
+  z-index: -1;
+}
+
+.first-paiement-sidebar-break2{
+  transform: rotateZ(10deg) translateY(-10px);
+  z-index: -1;
+}
+
+.second-paiement-sidebar-break1{
+  transform: rotateZ(-3deg) translateY(-6px);
+  z-index: -1;
+}
+
+.second-paiement-sidebar-break2{
+  transform: rotateZ(-10deg) translateY(10px);
+  z-index: -1;
+}
+
+label{
+  border: 1px solid var(--secondary-bgColor);
+  width: 30px;
+  height: 30px;
+  border-radius: 100vmax;
+  position: relative;
+}
+
+input[type = radio]:checked ~ label::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-bancaire{
+  border: 1px solid var(--secondary-bgColor);
+  border-radius: 8px;
+
+  & .form-bancaire-input{
+    background-color: #98A39B;
+    border-radius: 8px;
+
+    & input{
+      padding: 8px 12px 8px 12px;
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+    }
+  }
+}
+
+.form-choix-de-paiement{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.form-choix-de-paiement-light{
+  font-size: 16px;
+  font-weight: 400;
+  color: #BAC1BC;
+}
+
