@@ -12,7 +12,7 @@
     {% include "src/templates/header/header.html" %}
 
     <!-- <div id="sword-model"  style="width: 800px; height: 800px;"></div> -->
-    <section class="herobanner flex flex-col items-center py-32">
+    <section class="herobanner flex flex-col items-center py-32" id="hp-cover-section">
         <h1 class="herobanner-title">MARCHÉ<span>CON</span>SCIENT</h1>
         <div class="herobanner-text text-center flex flex-col gap-6 pb-11">
             <p class="relative">Découvrez une expérience d'achat en ligne <br> unique, engageante et qui se dégrade à
@@ -21,7 +21,7 @@
                 sélection en fonction de chaque saison.</p>
         </div>
         <div class="button flex gap-2 items-center px-12 py-5 rounded-full">
-            <p><a href="./fiche-produit.html"> Acheter nos sapins</a></p>
+            <p><a href="fiche-produit.html"> Acheter nos sapins</a></p>
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="ic-arrow-right-rec">
                     <path id="Vector"
@@ -32,22 +32,44 @@
         </div>
     </section>
 
-    <section class="dp flex flex-wrap items-center justify-center gap-20 pt-20 pb-24">
+    <section class="dp flex flex-wrap items-center justify-center gap-20 pt-20 pb-24" id="hp-product-cards">
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
         <div class="w-5/12 flex justify-center">{% include './src/composant/dp.html' %}</div>
     </section>
     
     <section class="info py-24 flex flex-col">
-        <!-- <div class="banner flex mb-32">
-            <p class="flex banderole">
-                Le reveil sonne
-                <span class="contents">
-                    <img src="./public/icons/bombe.svg" alt="bombe">
-                </span>
-                Chaque clic est une arme à double tranchant
-            </p>
-        </div> -->
+        <div class="banner-wrapper">
+            <div class="banner flex mb-32">
+                <div class="flex banderole">
+                    <p class="banderole-animation uppercase">
+                        Le reveil sonne
+                        <span class="contents">
+                            <img src="./public/icons/bombe.svg" alt="bombe">
+                        </span>
+                        Chaque clic est une arme à double tranchant
+                    </p>
+                </div>
+                <div class="flex banderole">
+                    <p class="banderole-animation uppercase">
+                        Le reveil sonne
+                        <span class="contents">
+                            <img src="./public/icons/bombe.svg" alt="bombe">
+                        </span>
+                        Chaque clic est une arme à double tranchant
+                    </p>
+                </div>
+                <div class="flex banderole">
+                    <p class="banderole-animation uppercase">
+                        Le reveil sonne
+                        <span class="contents">
+                            <img src="./public/icons/bombe.svg" alt="bombe">
+                        </span>
+                        Chaque clic est une arme à double tranchant
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="info-card flex flex-col gap-24 w-full m-auto max-w-7xl">
 
             <div class="card-banner card1 rounded-2xl relative">

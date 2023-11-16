@@ -442,6 +442,9 @@ video {
 .mb-8{
   margin-bottom: 2rem;
 }
+.mt-2{
+  margin-top: 0.5rem;
+}
 .mt-20{
   margin-top: 5rem;
 }
@@ -681,6 +684,10 @@ video {
   font-family: var(--text-font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--principal-fontColor);
   background-color: var(--principal-bgColor);
@@ -773,6 +780,63 @@ body {
 }
 
 .click-switchImg-hide {
+  opacity: 0;
+}
+
+@keyframes explosion {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.click-headerCart-explosion {
+  animation: explosion 0.5s ease-out forwards;
+}
+
+@keyframes starFlyHP {
+  from {
+    transform: translate(0, 0);
+    display: block;
+  }
+  to {
+    transform: translate(300px, -300px); /* Ajustez pour l'effet désiré */
+    display: none;
+  }
+}
+.herobanner.animate-stars p:first-child::after,
+.herobanner.animate-stars p:last-child::before {
+  animation: starFlyHP 1s ease forwards;
+}
+
+/* Animation Hang */
+@keyframes hphang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+.hp-product-cards-hang-btn-animation {
+  transform: rotate(120deg);
+  transition: transform 0.5s;
+}
+
+.hp-click-switchImg-animation {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hp-click-switchImg-hide {
   opacity: 0;
 }
 
@@ -1068,25 +1132,40 @@ body {
   background-color: var(--dp-bgColor);
 }
 
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
 .banner {
-  transform: rotateZ(-4deg);
   position: relative;
-  background-color: var(--secondary-bgColor);
-  margin-right: -10px;
-  margin-left: -10px;
+  transform: rotateZ(-4deg);
+  margin: 0 -10px;
   width: calc(100% + 20px);
 }
+.banner .banderole {
+  animation: move 5s linear infinite;
+  background-color: var(--secondary-bgColor);
+  white-space: nowrap;
+}
+.banner .banderole-animation {
+  display: flex;
+  width: 2400px;
+}
 .banner p {
+  display: flex;
   font-size: 120px;
   font-family: var(--title-font);
   color: var(--secondary-fontColor);
   white-space: nowrap;
-  animation: move 5s linear infinite;
 }
 .banner::before {
   content: "";
   position: absolute;
-  width: 105%;
+  width: 100%;
   height: 100%;
   inset: 0;
   background-color: red;
@@ -1097,10 +1176,12 @@ body {
 
 @keyframes move {
   0% {
-    transform: translateX(0); /* Commence sans déplacement */
+    transform: translateX(0);
+    /* Commence sans déplacement */
   }
   100% {
-    transform: translateX(-100%); /* Déplacement complet vers la gauche */
+    transform: translateX(-100%);
+    /* Déplacement complet vers la gauche */
   }
 }
 .card-banner {
@@ -1296,7 +1377,8 @@ body {
   border-radius: 6px;
 }
 
-.paiement-right-top, .paiement-right-bottom {
+.paiement-right-top,
+.paiement-right-bottom {
   background-color: var(--tertiary-bgColor);
   border-radius: 8px;
 }
@@ -1393,5 +1475,10 @@ body {
   100% {
     transform: rotateZ(20deg) translateY(20px);
   }
+}
+.dp-card-img-wrapper {
+  width: 336px;
+  height: 371px;
+  flex-shrink: 0;
 }
 /*# sourceMappingURL=main.css.map */

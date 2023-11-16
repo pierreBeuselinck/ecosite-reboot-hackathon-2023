@@ -13,11 +13,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan&display=swap');
 
-*{
+* {
   font-family: var(--text-font);
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   color: var(--principal-fontColor);
   background-color: var(--principal-bgColor)
 }
@@ -26,7 +30,7 @@ body{
 // @import 'abstracts/mixins';
 // @import 'abstracts/functions';   
 
-@import 'animations/animations';   
+@import 'animations/animations';
 
 @import 'base/fonts';
 // @import 'base/utilities';
@@ -50,85 +54,102 @@ body{
 @import 'utilities/text';
 
 
-.herobanner{
-  & .herobanner-title{
+.herobanner {
+  & .herobanner-title {
     font-size: 224px;
     font-family: var(--title-font);
     line-height: 1.1;
     padding-bottom: 120px;
 
-    span{
+    span {
       font-size: 224px;
       font-family: var(--title-font);
       color: var(--secondary-bgColor);
     }
   }
 
-  & .herobanner-text{
+  & .herobanner-text {
     text-transform: uppercase;
     font-size: 32px;
     line-height: 38.4px;
 
-    & p:first-child::after{
+    & p:first-child::after {
       content: url(icons/stars1.svg);
       position: absolute;
       right: calc(0px - 15%);
       top: calc(0px - 70%);
     }
 
-    & p:last-child::before{
+    & p:last-child::before {
       content: url(icons/stars2.svg);
       position: absolute;
       top: calc(0px - 40%);
       left: calc(0px - 15%);
     }
 
-    & p{
+    & p {
       font-weight: 400;
     }
 
-    & p span{
+    & p span {
       color: var(--secondary-bgColor);
       font-style: 700;
     }
   }
 
-  & .button{
+  & .button {
     background-color: var(--secondary-bgColor);
     cursor: pointer;
     margin-bottom: 70px;
 
-    & p{
+    & p {
       color: var(--secondary-fontColor);
       font-size: 24px;
     }
   }
 }
 
-.dp{
+.dp {
   background-color: var(--dp-bgColor);
 }
 
-.banner{
-  transform: rotateZ(-4deg);
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.banner {
   position: relative;
-  background-color: var(--secondary-bgColor);
-  margin-right: -10px;
-  margin-left: -10px;
+  transform: rotateZ(-4deg);
+  margin: 0 -10px;
   width: calc(100% + 20px);
 
-  p{
+  .banderole {
+    animation: move 5s linear infinite;
+    background-color: var(--secondary-bgColor);
+    white-space: nowrap;
+  }
+
+  .banderole-animation {
+    display: flex;
+    width: 2400px;
+  }
+
+  p {
+    display: flex;
     font-size: 120px;
     font-family: var(--title-font);
     color: var(--secondary-fontColor);
     white-space: nowrap;
-    animation: move 5s linear infinite;
   }
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
-    width: 105%;
+    width: 100%;
     height: 100%;
     inset: 0;
     background-color: red;
@@ -140,75 +161,80 @@ body{
 
 @keyframes move {
   0% {
-    transform: translateX(0); /* Commence sans déplacement */
+    transform: translateX(0);
+    /* Commence sans déplacement */
   }
+
   100% {
-    transform: translateX(-100%); /* Déplacement complet vers la gauche */
+    transform: translateX(-100%);
+    /* Déplacement complet vers la gauche */
   }
 }
 
 
-.card-banner{
-  background-color: var( --tertiary-bgColor);
+.card-banner {
+  background-color: var(--tertiary-bgColor);
   max-width: 860px;
   min-height: 500px;
   width: 100%;
 }
 
-.info-card{
-  .card-banner{
+.info-card {
+  .card-banner {
     align-self: flex-start;
   }
-  .card-banner:nth-child(2){
+
+  .card-banner:nth-child(2) {
     align-self: center;
   }
-  .card-banner:last-child{
+
+  .card-banner:last-child {
     align-self: flex-end;
   }
 }
 
 
-.card-banner{
-  h2{
+.card-banner {
+  h2 {
     font-size: 88px;
     font-family: var(--title-font);
     height: fit-content;
 
-    span{
+    span {
       font-family: var(--title-font);
       color: var(--secondary-bgColor);
     }
   }
 }
 
-.oeil{
+.oeil {
   top: 17%;
   right: -5%;
 }
 
-.idea{
+.idea {
   bottom: 0;
   right: 0;
 }
 
-.fleur{
+.fleur {
   right: 5%;
   top: 40%;
 }
 
-.warning{
+.warning {
   right: -7%;
   bottom: 10%;
   transform: rotateZ(15deg);
 }
 
-.curseur{
+.curseur {
   right: -5%;
   bottom: 20%;
 
 }
 
-.bottom-page{
+.bottom-page {
   background-color: var(--secondary-bgColor);
   border-radius: 32px 32px 0 0;
   padding-bottom: 32px;
@@ -216,7 +242,7 @@ body{
   flex-direction: column;
   align-items: center;
 
-  h2{
+  h2 {
     margin-bottom: 54px;
     font-size: 144px;
     font-family: var(--title-font);
@@ -226,13 +252,13 @@ body{
     width: fit-content;
     z-index: 2;
 
-    .coeur{
+    .coeur {
       top: 0;
       left: -12%;
       z-index: 3;
     }
-  
-    .epee{
+
+    .epee {
       top: 15%;
       right: -15%;
       z-index: -1;
@@ -240,29 +266,31 @@ body{
     }
   }
 
-  & > div{
+  &>div {
     display: flex;
     flex-direction: column;
     gap: 40px;
 
-    .text-bottom-page{
+    .text-bottom-page {
       font-size: 32px;
       font-family: var(--text-font);
 
-      p{
+      p {
         text-align: center;
         text-transform: uppercase;
         color: var(--secondary-fontColor);
       }
     }
-    .button-bottom-page{
+
+    .button-bottom-page {
       justify-content: center;
 
-      & button{
+      & button {
         padding: 6px;
         border-radius: 100%;
         background-color: black;
-        & img{
+
+        & img {
           background-color: black;
           padding: 8px;
           border-radius: 100%;
@@ -274,61 +302,62 @@ body{
 }
 
 
-.barre-avancement{
+.barre-avancement {
 
-  .bg-normal{
+  .bg-normal {
     background-color: var(--secondary-bgColor);
     padding: 8px;
     border-radius: 100%;
     transition: all .3s ease;
 
-    &:hover{
+    &:hover {
       transform: scale(1.25);
     }
   }
 
-  .bg-sombre{
+  .bg-sombre {
     background-color: #2C5818;
     padding: 8px;
     border-radius: 100%;
-    :hover{
-      cursor:not-allowed;
+
+    :hover {
+      cursor: not-allowed;
     }
   }
 
-  .sidebar-break1{
+  .sidebar-break1 {
     width: 230px;
     height: 4px;
     background-color: #6A796E;
   }
 
-  .sidebar-break2{
+  .sidebar-break2 {
     width: 70px;
     height: 4px;
     background-color: #6A796E;
   }
 
-  .sidebar-right{
+  .sidebar-right {
     width: 300px;
     height: 4px;
     background-color: #6A796E;
   }
 }
 
-.paiement-container{
+.paiement-container {
   padding: 0 72px;
   gap: 54px;
 
-  .paiement-left{
+  .paiement-left {
     max-width: 56%;
     width: 100%;
   }
 }
 
-.border-form{
+.border-form {
   border: 1px solid var(--secondary-bgColor);
 
-  & label{
+  & label {
     border: 1px solid var(--secondary-bgColor);
     width: 30px;
     height: 30px;
@@ -336,7 +365,7 @@ body{
     position: relative;
   }
 
-  input[type = radio]:checked ~ label::after{
+  input[type=radio]:checked~label::after {
     content: "";
     position: absolute;
     width: 15px;
@@ -349,42 +378,43 @@ body{
   }
 }
 
-.icon-form{
+.icon-form {
   left: -3%;
   top: -12%;
 }
 
-.divider{
+.divider {
   width: 100%;
   height: 1px;
   background-color: #98A39B;
 }
 
-.bouton-poursuivre{
+.bouton-poursuivre {
   background-color: var(--secondary-bgColor);
   border-radius: 6px;
 }
 
-.paiement-right-top , .paiement-right-bottom{
+.paiement-right-top,
+.paiement-right-bottom {
   background-color: var(--tertiary-bgColor);
   border-radius: 8px;
 }
 
-.fall-right-anim{
+.fall-right-anim {
   animation-name: fallRight;
   animation-duration: 1.3s;
   animation-delay: 2s;
   animation-fill-mode: both;
 }
 
-.fall-left-anim{
+.fall-left-anim {
   animation-name: fallLeft;
   animation-duration: 1.3s;
   animation-delay: 3s;
   animation-fill-mode: both;
 }
 
-.fall-anim{
+.fall-anim {
   animation-name: fall;
   animation-duration: 1s;
   animation-delay: 4s;
@@ -392,80 +422,95 @@ body{
 }
 
 @keyframes fallLeft {
-  0%{
+  0% {
     transform: rotateZ(0deg) translateY(0px);
   }
-  30%{
+
+  30% {
     transform: rotateZ(3deg) translateY(20px);
   }
-  60%{
+
+  60% {
     transform: rotateZ(2deg) translateY(20px);
   }
-  100%{
+
+  100% {
     transform: rotateZ(3deg) translateY(20px);
   }
 }
 
 @keyframes fallRight {
-  0%{
+  0% {
     transform: rotateZ(0deg) translateY(20px);
   }
-  30%{
+
+  30% {
     transform: rotateZ(-3deg) translateY(20px);
   }
-  60%{
+
+  60% {
     transform: rotateZ(-2deg) translateY(20px);
   }
-  100%{
+
+  100% {
     transform: rotateZ(-3deg) translateY(20px);
   }
 }
 
 @keyframes fall {
-  0%{
+  0% {
     transform: translateY(0px) rotateZ(0deg);
   }
-  30%{
+
+  30% {
     transform: translateY(0px) rotateZ(3deg);
   }
-  60%{
+
+  60% {
     transform: translateY(0px) rotateZ(-3deg);
   }
-  100%{
+
+  100% {
     transform: translateY(20px) rotateZ(0deg);
   }
 }
 
-.anim-rotate{
+.anim-rotate {
   animation-name: rotate;
   animation-duration: .5s;
   animation-delay: .3s;
   animation-fill-mode: both;
 }
 
-@keyframes rotate{
-  0%{
+@keyframes rotate {
+  0% {
     transform: rotateZ(0deg);
   }
-  100%{
+
+  100% {
     transform: rotateZ(20deg);
   }
 }
 
-.anim-rotate-bar{
+.anim-rotate-bar {
   animation-name: rotateBar;
   animation-duration: .5s;
   animation-delay: .3s;
   animation-fill-mode: both;
 }
 
-@keyframes rotateBar{
-  0%{
+@keyframes rotateBar {
+  0% {
     transform: rotateZ(0deg) translateY(0px);
   }
-  100%{
+
+  100% {
     transform: rotateZ(20deg) translateY(20px);
   }
 }
 
-
+.dp-card-img-wrapper {
+  width: 336px;
+  height: 371px;
+  flex-shrink: 0;
+}
