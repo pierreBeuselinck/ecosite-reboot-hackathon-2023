@@ -428,6 +428,10 @@ video {
 .m-auto{
   margin: auto;
 }
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .my-28{
   margin-top: 7rem;
   margin-bottom: 7rem;
@@ -546,6 +550,9 @@ video {
 }
 .rounded-md{
   border-radius: 0.375rem;
+}
+.border{
+  border-width: 1px;
 }
 .border-r-2{
   border-right-width: 2px;
@@ -1156,7 +1163,11 @@ body {
 }
 .banner .banderole-animation {
   display: flex;
-  width: 2400px;
+  width: 2450px;
+}
+.banner .banderole-animation-classement {
+  display: flex;
+  width: 1600px;
 }
 .banner p {
   display: flex;
