@@ -1,5 +1,6 @@
 /* Style de la modale */
 .modal {
+    position: relative;
     display: none; /* Caché par défaut */
     position: fixed; /* Reste en place même lors du défilement */
     left: 0;
@@ -14,6 +15,7 @@
   
   /* Style du contenu de la modale */
   .modal-content {
+    border-radius: 8px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% du haut et centré horizontalement */
     padding: 20px;
@@ -23,10 +25,13 @@
   
   /* Style du bouton de fermeture */
   .close {
+    position: absolute;
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    top: -20px;
+    right: 15px;
   }
   
   .close:hover,
@@ -38,5 +43,13 @@
   
 
   .modal--hp-start {
-    
+    color: #000000 !important;
+    .button {
+        background-color: var(--secondary-bgColor);
+    cursor: pointer;
+    }
+
+    .modal-content {
+        padding: 20px 0;
+    }
   }
