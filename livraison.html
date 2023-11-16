@@ -8,9 +8,114 @@
 
 </head>
 <body>
-    {% include "src/templates/header/header.html"  %}
+    {% include "src/templates/header/header3.html"  %}
+
+    <section class="barre-avancement flex items-center justify-center pt-24">
+        <div class="bg-normal">
+            <img src="./public/icons/camion-barre.svg" alt="camion">
+        </div>
+        <span class="sidebar-break1"></span>
+        <span class="sidebar-break2"></span>
+        <div class="bg-sombre">
+            <img src="./public/icons/carte.svg" alt="carte de crédit">
+        </div>
+        <span class="sidebar-right"></span>
+        <div class="bg-sombre">
+            <img src="./public/icons/horloge.svg" alt="horloge">
+        </div>
+    </section>
+
+    <section class="paiement-container flex mt-20">
+        <form class="paiement-left flex flex-col gap-14">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim">
+                <span class="icon-form absolute">
+                    <img src="./public/icons/magasin.svg" alt="magasin">
+                </span>
+                <p class="flex items-center">Livraison en magasin</p>
+                <div class="flex gap-2 items-center">
+                    <p>Dès le landemain</p>
+                    <span>Gratuit</span>
+                </div>
+                <input type="radio" name="radio" id="radio1" style="display: none;">
+                <label for="radio1"></label>
+            </div>
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim">
+                <span class="icon-form absolute">
+                    <img src="./public/icons/camion.svg" alt="camion">
+                </span>
+                <p class="flex items-center">Livraison à domicile</p>
+                <div class="flex gap-2 items-center">
+                    <p>Dès le landemain</p>
+                    <span>Gratuit</span>
+                </div>
+                <input type="radio" name="radio" id="radio2" style="display: none;">
+                <label for="radio2"></label>
+            </div>
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim">
+                <span class="icon-form absolute">
+                    <img src="./public/icons/colis.svg" alt="colis">
+                </span>
+                <p class="flex items-center">Livraison en point relais</p>
+                <div class="flex gap-2 items-center">
+                    <p>Dans 1 heure</p>
+                    <span>Gratuit</span>
+                </div>
+                <input type="radio" name="radio" id="radio3" style="display: none;">
+                <label for="radio3"></label>
+            </div>
+        </form>
+
+        <div class="paiement-right flex flex-col gap-8">
+            <div class="paiement-right-top flex flex-col p-8">
+                <div class="flex justify-between">
+                    <p>Prix de la culpabilité  (1 article)</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between">
+                    <p>Livraison</p>
+                    <p>Gratuit...</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between">
+                    <p>TOTAL</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider mt-4"></div>
+                <button class="bouton-poursuivre mt-6 px-8 py-4">Poursuivez la commande</button>
+            </div>
+            <div class="paiement-right-bottom flex flex-col p-8 gap-6">
+                <div class="flex gap-3">
+                    <div>
+                        <img src="./public/icons/camion-barre-white.svg" alt="camion">
+                    </div>
+                    <div>
+                        <p class="font-18">Livraison gratuite</p>
+                        <p class="font-16" style="color: #BAC1BC;">Dès 1€ d’achat</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <div>
+                        <img src="./public/icons/euro.svg" alt="Euro">
+                    </div>
+                    <div>
+                        <p class="font-18">Paiement 10x sans frais</p>
+                        <p class="font-16" style="color: #BAC1BC;">A partir de 1€</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <div>
+                        <img src="./public/icons/recycle.svg" alt="recycler">
+                    </div>
+                    <div>
+                        <p class="font-18">Sans reprise du sapin</p>
+                        <p class="font-16" style="color: #BAC1BC;">Conformément à nos principes de vente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
-    {% include "src/templates/footer/footer.html"  %}
 </body>
 </html>
