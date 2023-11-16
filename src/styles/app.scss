@@ -658,25 +658,29 @@ input[type=radio]:checked~label::after {
   }
 }
 
-.classement-finale{
-  h2{
+.classement-finale {
+  h2 {
     font-size: 28px;
   }
-  h3{
+
+  h3 {
     font-size: 48px;
     font-family: var(--title-font);
-    span{
+
+    span {
       font-size: 48px;
       font-family: var(--title-font);
       color: var(--secondary-bgColor);
     }
   }
-  .classement-finale-left-info{
+
+  .classement-finale-left-info {
     background-color: var(--tertiary-bgColor);
     padding: 32px;
     border-radius: 18px;
   }
-  .border-classement{
+
+  .border-classement {
     border: 1px solid var(--secondary-bgColor);
   }
 }
