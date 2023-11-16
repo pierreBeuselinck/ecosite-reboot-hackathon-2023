@@ -14,17 +14,19 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan&display=swap');
 
 *{
-  color: var(--principal-fontColor);
   font-family: var(--text-font);
 }
 
 body{
+  color: var(--principal-fontColor);
   background-color: var(--principal-bgColor)
 }
 
 @import 'abstracts/variables';
 // @import 'abstracts/mixins';
 // @import 'abstracts/functions';   
+
+@import 'animations/animations';   
 
 @import 'base/fonts';
 // @import 'base/utilities';
@@ -41,6 +43,12 @@ body{
 // @import 'pages/home';
 // @import 'pages/about';
 // @import 'pages/contact';
+@import 'pages/fiche-produit';
+
+@import 'utilities/colors';
+@import 'utilities/layout';
+@import 'utilities/text';
+
 
 .herobanner{
   & .herobanner-title{
@@ -104,11 +112,15 @@ body{
 .banner{
   transform: rotateZ(-4deg);
   position: relative;
+  background-color: var(--secondary-bgColor);
+  margin-right: -10px;
+  margin-left: -10px;
+  width: calc(100% + 20px);
+
   p{
     font-size: 120px;
     font-family: var(--title-font);
     color: var(--secondary-fontColor);
-    background-color: var(--secondary-bgColor);
     white-space: nowrap;
     animation: move 5s linear infinite;
   }

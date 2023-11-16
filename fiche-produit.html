@@ -1,16 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sapin</title>
     <link rel="stylesheet" href="./src/main.css">
-
 </head>
-<body>
-    {% include "src/templates/header/header.html"  %}
 
-    
-    {% include "src/templates/footer/footer.html"  %}
+<body>
+    {% include "src/templates/header/header.html" %}
+
+    <section class="c-product-page">
+        <div class="flex items-center">
+            <div class="c-product-page__visual-wrapper">
+                <img class="c-product-page__visual click-switchImg-animation" src="images/sapin.png" alt="sapin" srcset="">
+            </div>
+            <div>
+                <h2 class="u-text-title text-8xl uppercase click-hang flex">sapin&nbsp;<div
+                        class="u-text-title text-8xl click-falldown-target">de l’aube</div>
+                </h2>
+                <p class="text-lg font-extrabold mt-8">
+                    Prix : 34,99 €
+                </p>
+                <p class="text-lg mt-8 click-letterFalldown-target">
+                    Ce<span>&nbsp;</span> sapin,<span>&nbsp;</span> réputé,<span>&nbsp;</span> pour<span>&nbsp;</span>
+                    son<span>&nbsp;</span> parfum,<span>&nbsp;</span> délicat,<span>&nbsp;</span> est<span>&nbsp;</span>
+                    souvent<span>&nbsp;</span> célébré,<span>&nbsp;</span> pour<span>&nbsp;</span> sa<span>&nbsp;</span>
+                    beauté.<span>&nbsp;</span> Mais<span>&nbsp;</span> derrière<span>&nbsp;</span>
+                    son<span>&nbsp;</span> apparence<span>&nbsp;</span> se<span>&nbsp;</span> cache<span>&nbsp;</span>
+                    une<span>&nbsp;</span> réalité<span>&nbsp;</span> troublante.<span>&nbsp;</span>
+                    Pour<span>&nbsp;</span> chaque<span>&nbsp;</span> Sapin<span>&nbsp;</span> de<span>&nbsp;</span>
+                    l'Aube<span>&nbsp;</span> coupé,<span>&nbsp;</span> c'est<span>&nbsp;</span> un<span>&nbsp;</span>
+                    habitat<span>&nbsp;</span> qui<span>&nbsp;</span> est<span>&nbsp;</span> perdu,<span>&nbsp;</span>
+                    une<span>&nbsp;</span> faune<span>&nbsp;</span> qui<span>&nbsp;</span> est<span>&nbsp;</span>
+                    perturbée.<span>&nbsp;</span> En<span>&nbsp;</span> choisissant<span>&nbsp;</span>
+                    ce<span>&nbsp;</span> sapin,<span>&nbsp;</span> réfléchissez<span>&nbsp;</span>
+                    au<span>&nbsp;</span> coût<span>&nbsp;</span> écologique<span>&nbsp;</span> de<span>&nbsp;</span>
+                    la<span>&nbsp;</span> beauté<span>&nbsp;</span> éphémère.
+                </p>
+                <div class="mt-4">
+                    <p class="text-xl font-extrabold">Taille</p>
+                    <div class="c-product-page__sizes mt-4">
+                        <span class="click-falldown">50cm x 100cm</span>
+                        <span class="click-switchImg">50cm x 100cm</span>
+                        <span class="click-letterFalldown">50cm x 100cm</span>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <a href="livraison.html">
+                        <img src="images/add-to-card.svg" alt="" width="118" height="112" class="shrink-0">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-28 pb-20">
+            <p class="text-4xl uppercase text-center">La plantation intensive de sapins de Noël <br> a des conséquences
+                pour notre planète. </p>
+        </div>
+        <div class="c-product-page__card-masonry-wrapper">
+            <div class="c-product-page__card-masonry">
+                <div class="c-product-page__card">
+                    <p class="u-text-title text-7xl uppercase">
+                        <span class="u-text-title u-color-secondary-bgColor">7 à 10</span> ans.
+                    </p>
+                    <p class="text-2xl">
+                        C’est le temps qu’il faut à un sapin pour être commercialisé. Ce qui signifie que ces terres
+                        sont
+                        occupées pour de longues périodes.
+                    </p>
+                </div>
+                <div class="c-product-page__card">
+                    <p class="u-text-title text-7xl uppercase">
+                        <span class="u-text-title u-color-secondary-bgColor">30 à 50</span> litres d'eau.
+                    </p>
+                    <p class="text-2xl">
+                        C’est la quantité d'eau nécessaire moyenne à la culture d’un seul abre.
+                    </p>
+                </div>
+            </div>
+            <div class="c-product-page__card-masonry c-product-page__card-masonry--2">
+                <div class="c-product-page__card">
+                    <p class="u-text-title text-7xl uppercase">
+                        <span class="u-text-title u-color-secondary-bgColor">3kg</span> de co2.
+                    </p>
+                    <p class="text-2xl">
+                        C’est ce que génère un sapin qui est transporté sur 1000km.
+                    </p>
+                </div>
+                <div class="c-product-page__card">
+                    <p class="u-text-title text-7xl uppercase">
+                        <span class="u-text-title u-color-secondary-bgColor">30</span> millions.
+                    </p>
+                    <p class="text-2xl">
+                        Pas d’amis, non non, mais de sapins de Noel qui sont vendus chaque année dans le monde. La
+                        gestion
+                        de ces arbres après les fêtes représente un enjeu significatif en termes de déchets et de
+                        méthane
+                        s’ils sont mis en décharge.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="c-product-page__faq mt-28">
+            <div class="flex items-start  u-relative c-product-page__faq-title">
+                <div class="text-8xl u-text-title uppercase">faq</div>
+                <span class="c-product-page--sticker-faq absolute">
+                    <img src="images/faq.png" alt="" srcset="" width="172" height="228">
+                </span>
+            </div>
+            <div>
+                <div class="c-product-page__faq-content-item click-falldown-faq">
+                    <p class="text-3xl">Comment puis-je réduire mon empreinte carbone au quotidien?</p>
+                    <img src="icons/chevron-down.svg" alt="" width="40" height="40">
+                </div>
+                <hr>
+                <div class="c-product-page__faq-content-item click-falldown-faq">
+                    <p class="text-3xl">Quelles sont les initiatives locales ou mondiales pour la protection de
+                        l'environnement?</p>
+                    <img src="icons/chevron-down.svg" alt="" width="40" height="40">
+                </div>
+                <hr>
+                <div class="c-product-page__faq-content-item click-falldown-faq">
+                    <p class="text-3xl">Quels sont les effets du changement climatique sur la biodiversité?</p>
+                    <img src="icons/chevron-down.svg" alt="" width="40" height="40">
+                </div>
+            </div>
+        </div>
+        <div class="my-28">
+            <div class="text-center mb-8">
+                <p class="u-text-title text-6xl uppercase inline u-relative">
+                    ce qu’ils <span class="u-text-title u-color-secondary-bgColor">pensent</span> de notre sapin.
+                    <span class="c-product-page--sticker-review absolute">
+                        <img src="images/review.svg" alt="" width="140" height="140">
+                    </span>
+                </p>
+            </div>
+
+            <div class="c-product-page__avis-wrapper">
+                <img src="images/avis.png" alt="" srcset="" width="264" height="430" class="shrink-0">
+                <div class="flex flex-col grow gap-8 items-end">
+                    <div class="c-product-page__card c-product-page__card--avis items-center">
+                        <img src="images/avis-avatar.png" alt="" width="88" height="88" class="shrink-0">
+                        <div class="flex flex-col">
+                            <p class="text-sm text-right u-color-grey-200">il y a 10 jours</p>
+                            <img src="images/avis-stars.png" alt="" width="100" height="20">
+                            <div class="mt-6">
+                                <p class="text-lg">LOREM IPSUM</p>
+                                <p class="text-lg">It’s so good I had one saved in a drawer from last fall!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-product-page__card c-product-page__card--avis items-center">
+                        <img src="images/avis-avatar.png" alt="" width="88" height="88" class="shrink-0">
+                        <div class="flex flex-col">
+                            <p class="text-sm text-right u-color-grey-200">il y a 10 jours</p>
+                            <img src="images/avis-stars.png" alt="" width="100" height="20">
+                            <div class="mt-6">
+                                <p class="text-lg">LOREM IPSUM</p>
+                                <p class="text-lg">It’s so good I had one saved in a drawer from last fall!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-product-page__card c-product-page__card--avis items-center">
+                        <img src="images/avis-avatar.png" alt="" width="88" height="88" class="shrink-0">
+                        <div class="flex flex-col">
+                            <p class="text-sm text-right u-color-grey-200">il y a 10 jours</p>
+                            <img src="images/avis-stars.png" alt="" width="100" height="20">
+                            <div class="mt-6">
+                                <p class="text-lg">LOREM IPSUM</p>
+                                <p class="text-lg">It’s so good I had one saved in a drawer from last fall!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "src/templates/footer/footer.html" %}
 </body>
+
 </html>

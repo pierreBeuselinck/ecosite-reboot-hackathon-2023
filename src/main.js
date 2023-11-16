@@ -1,6 +1,6 @@
-import { sword } from './js/threeManager';
+// import { sword } from './js/threeManager';
+import { animationInit } from './js/animationManager';
 // import { loadData } from './dataManager';
-// import { startAnimation } from './animationManager';
 
 
 // Importez les fichiers CSS ou Sass nécessaires
@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', initApp);
 
 
 // Initialiser chaque module
-sword();
+// sword();
+animationInit();
 // loadData();
-// startAnimation();

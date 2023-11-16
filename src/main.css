@@ -428,18 +428,36 @@ video {
 .m-auto{
   margin: auto;
 }
+.my-28{
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
 .mb-32{
   margin-bottom: 8rem;
+}
+.mb-8{
+  margin-bottom: 2rem;
+}
+.mt-28{
+  margin-top: 7rem;
+}
+.mt-4{
+  margin-top: 1rem;
+}
+.mt-6{
+  margin-top: 1.5rem;
+}
+.mt-8{
+  margin-top: 2rem;
+}
+.inline{
+  display: inline;
 }
 .flex{
   display: flex;
 }
 .contents{
   display: contents;
-}
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .w-5\/12{
   width: 41.666667%;
@@ -453,11 +471,23 @@ video {
 .max-w-xl{
   max-width: 36rem;
 }
+.shrink-0{
+  flex-shrink: 0;
+}
+.grow{
+  flex-grow: 1;
+}
 .flex-col{
   flex-direction: column;
 }
 .flex-wrap{
   flex-wrap: wrap;
+}
+.items-start{
+  align-items: flex-start;
+}
+.items-end{
+  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -485,6 +515,9 @@ video {
 }
 .gap-6{
   gap: 1.5rem;
+}
+.gap-8{
+  gap: 2rem;
 }
 .rounded-2xl{
   border-radius: 1rem;
@@ -536,6 +569,9 @@ video {
 .pb-11{
   padding-bottom: 2.75rem;
 }
+.pb-20{
+  padding-bottom: 5rem;
+}
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -557,22 +593,66 @@ video {
 .pt-20{
   padding-top: 5rem;
 }
+.pt-28{
+  padding-top: 7rem;
+}
 .pt-4{
   padding-top: 1rem;
 }
 .text-center{
   text-align: center;
 }
+.text-right{
+  text-align: right;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-extrabold{
+  font-weight: 800;
+}
+.uppercase{
+  text-transform: uppercase;
+}
 * {
-  color: var(--principal-fontColor);
   font-family: var(--text-font);
 }
 
 body {
+  color: var(--principal-fontColor);
   background-color: var(--principal-bgColor);
 }
 
@@ -585,8 +665,85 @@ body {
   --principal-fontColor: #FFFFFF ;
   --secondary-fontColor: #0D1710 ;
   --dp-text-color: #121E15;
+  --grey-200: #98A39B;
   --title-font: "League Gothic";
   --text-font: "League Spartan";
+}
+
+@keyframes hang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+.click-hang {
+  cursor: pointer;
+  transform-origin: top center;
+}
+
+.click-hang-animate {
+  animation: hang 3s ease-in-out infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(500px) rotate(90deg);
+    opacity: 0;
+  }
+}
+.click-falldown {
+  cursor: pointer;
+}
+
+.click-falldown-animation {
+  animation: fall 1s forwards ease-in;
+}
+
+.click-falldown-faq {
+  cursor: pointer;
+}
+
+.click-falldown-faq-animation {
+  animation: fall 1s forwards ease-in;
+}
+
+.click-letterFalldown {
+  cursor: pointer;
+}
+
+@keyframes letterfall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}
+.click-letter-falldown-animation {
+  display: inline-block;
+  animation: letterfall 1s ease forwards;
+}
+
+.click-switchImg {
+  cursor: pointer;
+}
+
+.click-switchImg-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.click-switchImg-hide {
+  opacity: 0;
 }
 
 .header-bg-color {
@@ -689,6 +846,149 @@ body {
   left: -10%;
 }
 
+.c-product-page {
+  max-width: 1364px;
+  padding: 0 32px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.c-product-page__visual-wrapper {
+  width: 533px;
+  height: 600px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.c-product-page__visual {
+  width: 100%;
+  height: auto;
+}
+
+.c-product-page__sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.c-product-page__sizes span {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #6A796E;
+}
+.c-product-page__sizes span:hover, .c-product-page__sizes span:focus {
+  background-color: #6A796E;
+}
+
+.c-product-page__card-masonry-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.c-product-page__card-masonry {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.c-product-page__card-masonry--2 {
+  grid-template-columns: 1fr 0.8fr;
+  gap: 32px;
+}
+
+.c-product-page__card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 24px;
+  padding: 32px;
+  background: var(--tertiary-bgColor);
+}
+
+.c-product-page__card--avis {
+  max-width: 570px;
+  width: 100%;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.c-product-page__faq-title {
+  padding-right: 170px;
+}
+
+.c-product-page__faq {
+  color: #0D1710 !important;
+  border-radius: 24px;
+  background: #EE7748;
+  padding: 32px 40px;
+  display: flex;
+  gap: 16px;
+}
+.c-product-page__faq hr {
+  background-color: #0D1710;
+  height: 1px;
+  border: 0;
+}
+
+.c-product-page__faq-content {
+  display: flex;
+  max-width: 918px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.c-product-page__faq-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  gap: 16px;
+}
+
+.c-product-page__avis-wrapper {
+  max-width: 990px;
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.c-product-page--sticker-review {
+  right: -18%;
+  bottom: 20%;
+}
+
+.c-product-page--sticker-faq {
+  right: 2%;
+  top: -15%;
+}
+
+.u-color-secondary-bgColor {
+  color: var(--secondary-bgColor);
+}
+
+.u-color-grey-200 {
+  color: var(--grey-200);
+}
+
+.u-relative {
+  position: relative;
+}
+
+.u-text-title {
+  font-family: var(--text-font);
+  font-family: var(--title-font);
+}
+
 .herobanner .herobanner-title {
   font-size: 224px;
   font-family: var(--title-font);
@@ -741,12 +1041,15 @@ body {
 .banner {
   transform: rotateZ(-4deg);
   position: relative;
+  background-color: var(--secondary-bgColor);
+  margin-right: -10px;
+  margin-left: -10px;
+  width: calc(100% + 20px);
 }
 .banner p {
   font-size: 120px;
   font-family: var(--title-font);
   color: var(--secondary-fontColor);
-  background-color: var(--secondary-bgColor);
   white-space: nowrap;
   animation: move 5s linear infinite;
 }
