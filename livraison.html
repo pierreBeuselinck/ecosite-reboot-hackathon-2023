@@ -17,7 +17,7 @@
             <img src="./public/icons/camion-barre.svg" alt="camion">
             <span class="livraison-absolute-text">LIVRAISON</span>
         </div>
-        <span class="sidebar-break1"></span>
+        <span class="sidebar-break1" id="animSidebar"></span>
         <span class="sidebar-break2"></span>
         <div class="bg-sombre relative">
             <img src="./public/icons/carte.svg" alt="carte de crédit">
@@ -32,7 +32,7 @@
 
     <section class="paiement-container flex mt-28">
         <form class="paiement-left flex flex-col gap-14">
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim" id="btn1">
                 <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/magasin.svg" alt="magasin">
@@ -45,7 +45,7 @@
                 <input type="radio" name="radio" id="radio1" class="button-radio-form" style="display: none;">
                 <label for="radio1"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim" id="btn2">
                 <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/camion.svg" alt="camion">
@@ -58,7 +58,7 @@
                 <input type="radio" name="radio" id="radio2" style="display: none;">
                 <label for="radio2"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim" id="btn3">
                 <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/colis.svg" alt="colis">
@@ -124,7 +124,8 @@
             </div>
         </div>
     </section>
-    <script type="module" src="/src/main.js"></script>
+
+    <script type="module" src="/src/main.js" defer></script>
 
 </body>
 

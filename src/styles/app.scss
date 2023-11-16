@@ -513,6 +513,7 @@ body {
   animation-duration: .5s;
   animation-delay: .3s;
   animation-fill-mode: both;
+  z-index: -1;
 }
 
 @keyframes rotateBar {
@@ -521,7 +522,7 @@ body {
   }
 
   100% {
-    transform: rotateZ(20deg) translateY(20px);
+    transform: rotateZ(20deg) translateY(45px);
   }
 }
 
@@ -655,11 +656,6 @@ input[type=radio]:checked~label::after {
       font-family: var(--title-font);
     }
   }
-}
-
-.inputChecked {
-  background-color: #f0f0f0;
-  /* Nouvelle couleur de fond */
 }
 
 .classement-finale{
