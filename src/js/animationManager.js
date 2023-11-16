@@ -180,6 +180,11 @@ function animationInit() {
     document.getElementById('myModal').style.display = "none";
   });
 
+    // Fermer la modale lorsque l'utilisateur clique sur le symbole (×)
+    document.getElementsByClassName('agree')[0].addEventListener('click', function () {
+      document.getElementById('myModal').style.display = "none";
+    });
+  
 
 }
 
