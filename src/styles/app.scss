@@ -344,11 +344,12 @@ body {
     background-color: #6A796E;
   }
 }
-.paiement-container-mid{
+
+.paiement-container-mid {
   padding: 0 170px;
   gap: 54px;
 
-  .paiement-left{
+  .paiement-left {
     max-width: 56%;
     width: 100%;
   }
@@ -525,7 +526,9 @@ body {
   flex-shrink: 0;
 }
 
-.livraison-absolute-text, .paiement-absolute-text, .confirmation-absolute-text{
+.livraison-absolute-text,
+.paiement-absolute-text,
+.confirmation-absolute-text {
   position: absolute;
   left: 50%;
   top: 150%;
@@ -533,27 +536,27 @@ body {
 }
 
 
-.first-paiement-sidebar-break1{
+.first-paiement-sidebar-break1 {
   transform: rotateZ(6deg) translateY(12px);
   z-index: -1;
 }
 
-.first-paiement-sidebar-break2{
+.first-paiement-sidebar-break2 {
   transform: rotateZ(10deg) translateY(-10px);
   z-index: -1;
 }
 
-.second-paiement-sidebar-break1{
+.second-paiement-sidebar-break1 {
   transform: rotateZ(-3deg) translateY(-6px);
   z-index: -1;
 }
 
-.second-paiement-sidebar-break2{
+.second-paiement-sidebar-break2 {
   transform: rotateZ(-10deg) translateY(10px);
   z-index: -1;
 }
 
-label{
+label {
   border: 1px solid var(--secondary-bgColor);
   width: 30px;
   height: 30px;
@@ -561,7 +564,7 @@ label{
   position: relative;
 }
 
-input[type = radio]:checked ~ label::after{
+input[type=radio]:checked~label::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -573,15 +576,15 @@ input[type = radio]:checked ~ label::after{
   transform: translate(-50%, -50%);
 }
 
-.form-bancaire{
+.form-bancaire {
   border: 1px solid var(--secondary-bgColor);
   border-radius: 8px;
 
-  & .form-bancaire-input{
+  & .form-bancaire-input {
     background-color: #98A39B;
     border-radius: 8px;
 
-    & input{
+    & input {
       padding: 8px 12px 8px 12px;
       border: 1px solid #CBD5E1;
       border-radius: 6px;
@@ -589,59 +592,60 @@ input[type = radio]:checked ~ label::after{
   }
 }
 
-.form-choix-de-paiement{
+.form-choix-de-paiement {
   font-size: 20px;
   font-weight: 800;
 }
 
-.form-choix-de-paiement-light{
+.form-choix-de-paiement-light {
   font-size: 16px;
   font-weight: 400;
   color: #BAC1BC;
 }
 
 // Class Background Input
-.inputChecked{
+.inputChecked {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.title-confirmation{
+.title-confirmation {
   font-size: 26px;
   font-weight: bold;
   line-height: 32px;
 }
 
-.text-confirmation{
+.text-confirmation {
   font-size: 20px;
   line-height: 30px;
 }
 
 
-.bug-confirmation-bottom{
+.bug-confirmation-bottom {
   position: absolute;
   bottom: -100%;
   left: 10%;
 }
 
-.bug-confirmation-top{
+.bug-confirmation-top {
   position: absolute;
   top: 0%;
   left: 0;
 }
 
-.bug-confirmation-bottom-left{
+.bug-confirmation-bottom-left {
   position: absolute;
   bottom: -80%;
   left: 0;
 }
 
-.herobanner-classement{
-  h1{
+.herobanner-classement {
+  h1 {
     margin-top: 70px;
     margin-bottom: 70px;
     font-size: 96px;
     font-family: var(--title-font);
-    span{
+
+    span {
       color: var(--secondary-bgColor);
       font-family: var(--title-font);
     }
@@ -649,5 +653,106 @@ input[type = radio]:checked ~ label::after{
 }
 
 .inputChecked {
-  background-color: #f0f0f0; /* Nouvelle couleur de fond */
+  background-color: #f0f0f0;
+  /* Nouvelle couleur de fond */
+}
+
+.classement-finale{
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 48px;
+    font-family: var(--title-font);
+    span{
+      font-size: 48px;
+      font-family: var(--title-font);
+      color: var(--secondary-bgColor);
+    }
+  }
+  .classement-finale-left-info{
+    background-color: var(--tertiary-bgColor);
+    padding: 32px;
+    border-radius: 18px;
+  }
+  .border-classement{
+    border: 1px solid var(--secondary-bgColor);
+  }
+}
+
+.border-classement {
+  border: 1px solid var(--secondary-bgColor);
+}
+
+.classement-player {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 32px 8px 16px;
+  border-radius: 8px;
+  min-width: 500px;
+  width: 100%;
+
+  .nb-classement {
+    font-size: 32px;
+  }
+
+  .classement-name {
+    font-size: 24px;
+  }
+
+  .btn-classement {
+    width: 57px;
+    height: 57px;
+    font-size: 18px;
+    background-color: var(--tertiary-bgColor);
+    padding: 8px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      border: 1px solid var(--secondary-bgColor);
+      border-radius: 100%;
+    }
+  }
+}
+
+.coeur-classement {
+  top: -5%;
+  left: 45%;
+}
+
+.fleur-classement {
+  top: -8%;
+  left: 50%;
+}
+
+.bottom-page-classement {
+  background-color: var(--secondary-bgColor);
+  border-radius: 32px 32px 0 0;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 54px;
+    font-size: 144px;
+    font-family: var(--title-font);
+    color: var(--secondary-fontColor);
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    z-index: 2;
+  }
+
+  h3 {
+    font-size: 34px;
+    font-family: var(--title-font);
+    color: #87DB61;
+  }
 }
