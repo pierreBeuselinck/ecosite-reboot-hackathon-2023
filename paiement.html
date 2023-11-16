@@ -8,7 +8,117 @@
 </head>
 <body>
     {% include "src/templates/header/header3.html" %}
+    <section class="barre-avancement flex items-center justify-center pt-8">
+        <div class="bg-normal barre-avancement-camion relative">
+            <img src="./public/icons/camion-barre.svg" alt="camion">
+            <span class="livraison-absolute-text">LIVRAISON</span>
+        </div>
+        <span class="sidebar-break1 first-paiement-sidebar-break1"></span>
+        <span class="sidebar-break2 first-paiement-sidebar-break2"></span>
+        <div class="bg-normal relative">
+            <img src="./public/icons/carte.svg" alt="carte de crédit">
+            <span class="paiement-absolute-text">PAIEMENT</span>
+        </div>
+        <span class="sidebar-break1 second-paiement-sidebar-break1"></span>
+        <span class="sidebar-break2 second-paiement-sidebar-break2"></span>
+        <div class="bg-sombre relative">
+            <img src="./public/icons/horloge.svg" alt="horloge">
+            <span class="confirmation-absolute-text">CONFIRMATION</span>
+        </div>
+    </section>
 
+
+    <section class="paiement-container-mid flex mt-28">
+        <div class="paiement-left">
+            <form>
+                <div class="form-bancaire flex flex-col gap-6 p-8"> <!-- add inputChecked en class -->
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 items-center">
+                            <input type="radio" id="radioCard" style="display: none;">
+                            <label for="radioCard"></label>   
+                            <p class="form-choix-de-paiement">Carte Bancaire</p>
+                        </div>
+                        <img src="./images/cb.png" alt="Carte bancaire">
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="flex flex-col gap-2 p-4 form-bancaire-input">
+                            <input type="text" placeholder="Carte Bancaire">
+                            <input type="number" placeholder="Numéro de carte">
+                            <input type="text" placeholder="Titulaire de la carte">
+                            <div class="flex gap-2">
+                                <input type="date" placeholder="MM / AA">
+                                <input type="number" placeholder="CVV">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-6 max-w-xs">
+                            <p>Le paiement va directement dans
+                                notre poche et nous permettra
+                                de continuer d’alimenter nos fermes
+                                alors merci e votre aide !</p>
+                            <div class="flex gap-2 items-center">
+                                <input type="radio" id="conditionPaiement" style="display: none;">
+                                <label for="conditionPaiement" style="min-width: 30px;"></label>
+                                <p class="form-choix-de-paiement-light">J’accepte que mes informations soient
+                                    utilisé pour la revente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-14">
+                    <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim"> <!-- add inputChecked en class -->
+                        <div class="flex gap-2">       
+                            <input type="radio" name="radio" id="radio1" style="display: none;">
+                            <label for="radio1"></label>
+                            <p class="flex items-center form-choix-de-paiement">Paypal</p>   
+                        </div> 
+                        <img src="./images/paypal.png" alt="Paypal">                 
+                        
+                    </div>
+                    <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim"> <!-- add inputChecked en class -->
+                        <div class="flex gap-2">       
+                            <input type="radio" name="radio" id="radio2" style="display: none;">
+                            <label for="radio2"></label>
+                            <p class="flex items-center form-choix-de-paiement">Google Pay</p>   
+                        </div> 
+                        <img src="./images/googlePay.png" alt="Paypal"> 
+                    </div>
+                    <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim"> <!-- add inputChecked en class -->
+                        <div class="flex gap-2 items-center">       
+                            <input type="radio" name="radio" id="radio3" style="display: none;">
+                            <label for="radio3"></label>
+                            <p class="flex items-center form-choix-de-paiement">10x ou 20x sans frais</p>   
+                        </div> 
+                        <p class="form-choix-de-paiement-light">10 ou 20x sans frais</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="paiement-right flex flex-col gap-8">
+            <div class="paiement-right-top flex flex-col p-8">
+                <div class="flex justify-between">
+                    <p>Prix de la culpabilité  (1 article)</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between">
+                    <p>Livraison</p>
+                    <p>Gratuit...</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between form-choix-de-paiement">
+                    <p>TOTAL</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider mt-4"></div>
+                <a href="./confirmation.html"><button class="bouton-poursuivre mt-6 px-8 py-4" style="color: #121E15; width: 100%;">Poursuivez la commande</button></a>
+            </div>
+            <div class="paiement-right-bottom flex flex-col p-8 gap-6">
+                <h2 class="form-choix-de-paiement">Adresse de facturation</h2>
+                <p>On connait déjà votre adresse ne vous inquietez pas...</p>
+            </div>
+        </div>
+    </section>
 
 
 </body>

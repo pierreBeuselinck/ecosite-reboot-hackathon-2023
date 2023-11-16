@@ -343,6 +343,15 @@ body {
     background-color: #6A796E;
   }
 }
+.paiement-container-mid{
+  padding: 0 170px;
+  gap: 54px;
+
+  .paiement-left{
+    max-width: 56%;
+    width: 100%;
+  }
+}
 
 .paiement-container {
   padding: 0 72px;
@@ -514,3 +523,127 @@ body {
   height: 371px;
   flex-shrink: 0;
 }
+
+.livraison-absolute-text, .paiement-absolute-text, .confirmation-absolute-text{
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+
+.first-paiement-sidebar-break1{
+  transform: rotateZ(6deg) translateY(12px);
+  z-index: -1;
+}
+
+.first-paiement-sidebar-break2{
+  transform: rotateZ(10deg) translateY(-10px);
+  z-index: -1;
+}
+
+.second-paiement-sidebar-break1{
+  transform: rotateZ(-3deg) translateY(-6px);
+  z-index: -1;
+}
+
+.second-paiement-sidebar-break2{
+  transform: rotateZ(-10deg) translateY(10px);
+  z-index: -1;
+}
+
+label{
+  border: 1px solid var(--secondary-bgColor);
+  width: 30px;
+  height: 30px;
+  border-radius: 100vmax;
+  position: relative;
+}
+
+input[type = radio]:checked ~ label::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--secondary-bgColor);
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-bancaire{
+  border: 1px solid var(--secondary-bgColor);
+  border-radius: 8px;
+
+  & .form-bancaire-input{
+    background-color: #98A39B;
+    border-radius: 8px;
+
+    & input{
+      padding: 8px 12px 8px 12px;
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+    }
+  }
+}
+
+.form-choix-de-paiement{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.form-choix-de-paiement-light{
+  font-size: 16px;
+  font-weight: 400;
+  color: #BAC1BC;
+}
+
+// Class Background Input
+.inputChecked{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.title-confirmation{
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.text-confirmation{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+.bug-confirmation-bottom{
+  position: absolute;
+  bottom: -100%;
+  left: 10%;
+}
+
+.bug-confirmation-top{
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+.bug-confirmation-bottom-left{
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+}
+
+.herobanner-classement{
+  h1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 96px;
+    font-family: var(--title-font);
+    span{
+      color: var(--secondary-bgColor);
+      font-family: var(--title-font);
+    }
+  }
+}
+

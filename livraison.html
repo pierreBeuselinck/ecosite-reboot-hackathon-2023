@@ -10,24 +10,27 @@
 <body>
     {% include "src/templates/header/header3.html"  %}
 
-    <section class="barre-avancement flex items-center justify-center pt-24">
-        <div class="bg-normal barre-avancement-camion">
+    <section class="barre-avancement flex items-center justify-center pt-8">
+        <div class="bg-normal barre-avancement-camion relative">
             <img src="./public/icons/camion-barre.svg" alt="camion">
+            <span class="livraison-absolute-text">LIVRAISON</span>
         </div>
         <span class="sidebar-break1"></span>
         <span class="sidebar-break2"></span>
-        <div class="bg-sombre">
+        <div class="bg-sombre relative">
             <img src="./public/icons/carte.svg" alt="carte de crédit">
+            <span class="paiement-absolute-text">PAIEMENT</span>
         </div>
-        <span class="sidebar-right"></span>
-        <div class="bg-sombre">
+        <span class="sidebar-right relative"></span>
+        <div class="bg-sombre relative">
             <img src="./public/icons/horloge.svg" alt="horloge">
+            <span class="confirmation-absolute-text">CONFIRMATION</span>
         </div>
     </section>
 
-    <section class="paiement-container flex mt-20">
+    <section class="paiement-container flex mt-28">
         <form class="paiement-left flex flex-col gap-14">
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-right-anim"> <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/magasin.svg" alt="magasin">
                 </span>
@@ -39,7 +42,7 @@
                 <input type="radio" name="radio" id="radio1" style="display: none;">
                 <label for="radio1"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-left-anim"> <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/camion.svg" alt="camion">
                 </span>
@@ -51,7 +54,7 @@
                 <input type="radio" name="radio" id="radio2" style="display: none;">
                 <label for="radio2"></label>
             </div>
-            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim">
+            <div class="border-form flex justify-between p-8 rounded-lg relative fall-anim"> <!-- add inputChecked en class -->
                 <span class="icon-form absolute">
                     <img src="./public/icons/colis.svg" alt="colis">
                 </span>
@@ -77,12 +80,12 @@
                     <p>Gratuit...</p>
                 </div>
                 <div class="divider my-4"></div>
-                <div class="flex justify-between">
+                <div class="flex justify-between form-choix-de-paiement">
                     <p>TOTAL</p>
                     <p>34,99€</p>
                 </div>
                 <div class="divider mt-4"></div>
-                <button class="bouton-poursuivre mt-6 px-8 py-4" style="color: #121E15;">Poursuivez la commande</button>
+                <a href="./paiement.html"><button class="bouton-poursuivre mt-6 px-8 py-4" style="color: #121E15; width: 100%;">Poursuivez la commande</button></a>
             </div>
             <div class="paiement-right-bottom flex flex-col p-8 gap-6">
                 <div class="flex gap-3">
@@ -115,7 +118,5 @@
             </div>
         </div>
     </section>
-
-    
 </body>
 </html>

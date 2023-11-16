@@ -8,21 +8,75 @@
 
 </head>
 <body>
-    {% include "src/templates/header/header3.html"  %}
-
-    <section class="barre-avancement flex">
-        <div>
+    {% include "src/templates/header/header3.html" %}
+    <section class="barre-avancement flex items-center justify-center pt-8">
+        <div class="bg-normal barre-avancement-camion relative">
             <img src="./public/icons/camion-barre.svg" alt="camion">
+            <span class="livraison-absolute-text">LIVRAISON</span>
         </div>
-        <span></span>
-        <span></span>
-        <div>
+        <span class="sidebar-break1 first-paiement-sidebar-break1"></span>
+        <span class="sidebar-break2 first-paiement-sidebar-break2"></span>
+        <div class="bg-normal relative">
             <img src="./public/icons/carte.svg" alt="carte de crédit">
+            <span class="paiement-absolute-text">PAIEMENT</span>
         </div>
-        <span></span>
-        <div>
+        <span class="sidebar-break1 second-paiement-sidebar-break1"></span>
+        <span class="sidebar-break2 second-paiement-sidebar-break2"></span>
+        <div class="bg-sombre relative">
             <img src="./public/icons/horloge.svg" alt="horloge">
+            <span class="confirmation-absolute-text">CONFIRMATION</span>
         </div>
     </section>
+
+
+    <section class="paiement-container-mid flex mt-28 relative">
+        <div class="paiement-left">
+            <form>
+                <div class="form-bancaire flex flex-col gap-6 p-8 inputChecked">
+                    <h2 class="title-confirmation">Plus qu'une étape</h2>
+                    <p class="text-confirmation">Si vous validez ce panier, vous participez à la croissance d’une décadence environnementale. Chaque produit dans ce panier représente bien plus qu'un simple achat. Il symbolise une empreinte, un impact, une marque laissée sur notre Terre fragile. En procédant à cet achat, prenez un moment pour réfléchir à son coût réel – non pas en termes monétaires, mais en termes de conséquences sur notre écosystème. Vous avez le pouvoir de faire un choix différent, un choix qui privilégie la préservation et le respect de notre environnement. Votre décision aujourd'hui façonne le monde de demain. Êtes-vous prêt à assumer cette responsabilité ?</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="paiement-right flex flex-col gap-8">
+            <div class="paiement-right-top flex flex-col p-8">
+                <div class="flex justify-between">
+                    <p>Prix de la culpabilité  (1 article)</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between">
+                    <p>Livraison</p>
+                    <p>Gratuit...</p>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="flex justify-between form-choix-de-paiement">
+                    <p>TOTAL</p>
+                    <p>34,99€</p>
+                </div>
+                <div class="divider mt-4"></div>
+                <button class="bouton-poursuivre mt-6 px-8 py-4" style="color: #121E15;">Dépensez 34,99€</button>
+            </div>
+            <div class="paiement-right-bottom flex flex-col p-8 gap-6">
+                <h2 class="form-choix-de-paiement">Adresse de facturation</h2>
+                <p>On connait déjà votre adresse ne vous inquietez pas...</p>
+            </div>
+        </div>
+
+        <span class="bug-confirmation-bottom">
+            <img src="./images/confirmation-bug.png" alt="">
+        </span>
+        <span class="bug-confirmation-bottom-left">
+            <img src="./images/confirmation-bug3.png" alt="">
+        </span>
+        <span class="bug-confirmation-top">
+            <img src="./images/confirmation-bug2.png" alt="">
+        </span>
+    </section>
+
+
+
+
 </body>
 </html>
