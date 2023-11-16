@@ -449,6 +449,9 @@ video {
 .mt-2{
   margin-top: 0.5rem;
 }
+.mt-24{
+  margin-top: 6rem;
+}
 .mt-28{
   margin-top: 7rem;
 }
@@ -607,6 +610,10 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .py-8{
   padding-top: 2rem;
@@ -1685,5 +1692,40 @@ input[type=radio]:checked ~ label::after {
   padding: 6px;
   border: 1px solid var(--secondary-bgColor);
   border-radius: 100%;
+}
+
+.coeur-classement {
+  top: -5%;
+  left: 45%;
+}
+
+.fleur-classement {
+  top: -8%;
+  left: 50%;
+}
+
+.bottom-page-classement {
+  background-color: var(--secondary-bgColor);
+  border-radius: 32px 32px 0 0;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-page-classement h2 {
+  margin-bottom: 54px;
+  font-size: 144px;
+  font-family: var(--title-font);
+  color: var(--secondary-fontColor);
+  text-align: center;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 2;
+}
+.bottom-page-classement h3 {
+  font-size: 34px;
+  font-family: var(--title-font);
+  color: #87DB61;
 }
 /*# sourceMappingURL=main.css.map */

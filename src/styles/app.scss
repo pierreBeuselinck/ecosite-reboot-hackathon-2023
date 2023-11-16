@@ -715,3 +715,39 @@ input[type = radio]:checked ~ label::after{
     }
   }
 }
+
+.coeur-classement{
+  top: -5%;
+  left: 45%;
+}
+
+.fleur-classement{
+  top: -8%;
+  left: 50%;
+}
+
+.bottom-page-classement {
+  background-color: var(--secondary-bgColor);
+  border-radius: 32px 32px 0 0;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 54px;
+    font-size: 144px;
+    font-family: var(--title-font);
+    color: var(--secondary-fontColor);
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    z-index: 2;
+  }
+
+  h3{
+    font-size: 34px;
+    font-family: var(--title-font);
+    color: #87DB61;
+  }
+}
