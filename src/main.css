@@ -1584,7 +1584,9 @@ body {
   flex-shrink: 0;
 }
 
-.livraison-absolute-text, .paiement-absolute-text, .confirmation-absolute-text {
+.livraison-absolute-text,
+.paiement-absolute-text,
+.confirmation-absolute-text {
   position: absolute;
   left: 50%;
   top: 150%;
@@ -1701,6 +1703,100 @@ input[type=radio]:checked ~ label::after {
 }
 
 .inputChecked {
-  background-color: #f0f0f0; /* Nouvelle couleur de fond */
+  background-color: #f0f0f0;
+  /* Nouvelle couleur de fond */
+}
+
+.classement-finale h2 {
+  font-size: 28px;
+}
+.classement-finale h3 {
+  font-size: 48px;
+  font-family: var(--title-font);
+}
+.classement-finale h3 span {
+  font-size: 48px;
+  font-family: var(--title-font);
+  color: var(--secondary-bgColor);
+}
+.classement-finale .classement-finale-left-info {
+  background-color: var(--tertiary-bgColor);
+  padding: 32px;
+  border-radius: 18px;
+}
+.classement-finale .border-classement {
+  border: 1px solid var(--secondary-bgColor);
+}
+
+.border-classement {
+  border: 1px solid var(--secondary-bgColor);
+}
+
+.classement-player {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 32px 8px 16px;
+  border-radius: 8px;
+  min-width: 500px;
+  width: 100%;
+}
+.classement-player .nb-classement {
+  font-size: 32px;
+}
+.classement-player .classement-name {
+  font-size: 24px;
+}
+.classement-player .btn-classement {
+  width: 57px;
+  height: 57px;
+  font-size: 18px;
+  background-color: var(--tertiary-bgColor);
+  padding: 8px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classement-player .btn-classement p {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 1px solid var(--secondary-bgColor);
+  border-radius: 100%;
+}
+
+.coeur-classement {
+  top: -5%;
+  left: 45%;
+}
+
+.fleur-classement {
+  top: -8%;
+  left: 50%;
+}
+
+.bottom-page-classement {
+  background-color: var(--secondary-bgColor);
+  border-radius: 32px 32px 0 0;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-page-classement h2 {
+  margin-bottom: 54px;
+  font-size: 144px;
+  font-family: var(--title-font);
+  color: var(--secondary-fontColor);
+  text-align: center;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 2;
+}
+.bottom-page-classement h3 {
+  font-size: 34px;
+  font-family: var(--title-font);
+  color: #87DB61;
 }
 /*# sourceMappingURL=main.css.map */
