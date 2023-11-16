@@ -543,3 +543,7 @@ input[type = radio]:checked ~ label::after{
   color: #BAC1BC;
 }
 
+// Class Background Input
+.inputChecked{
+  background-color: rgba(255, 255, 255, 0.2);
+}
