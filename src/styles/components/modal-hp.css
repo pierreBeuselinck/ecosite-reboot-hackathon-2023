@@ -18,10 +18,10 @@
 .modal-content {
   border-radius: 8px;
   background-color: #fefefe;
-  margin: 15% auto; /* 15% du haut et centré horizontalement */
+  margin: 4% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Largeur de la modale */
+  width: 80%;
 }
 
 /* Style du bouton de fermeture */
